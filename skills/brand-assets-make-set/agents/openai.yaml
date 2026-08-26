@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make A Brand Asset Set"
+  short_description: "Turn a clear framework into matching asset files"
+  default_prompt: "Use $brand-assets-make-set to turn this framework into a matching asset set."

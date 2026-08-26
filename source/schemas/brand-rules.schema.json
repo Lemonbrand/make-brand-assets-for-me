@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand recipe",
+  "type": "object",
+  "required": ["version", "brand_name", "brand_id", "references", "look", "checks", "rights"],
+  "properties": {
+    "version": {"type": "string"},
+    "brand_name": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "references": {
+      "type": "object",
+      "required": ["use_as_is", "change_from_this", "look_only", "do_not_use"],
+      "properties": {
+        "use_as_is": {"type": "array"},
+        "change_from_this": {"type": "array"},
+        "look_only": {"type": "array"},
+        "do_not_use": {"type": "array"}
+      }
+    },
+    "look": {"type": "object"},
+    "checks": {"type": "object"},
+    "rights": {
+      "type": "object",
+      "required": ["user_confirms_permission"],
+      "properties": {"user_confirms_permission": {"type": "boolean"}}
+    }
+  }
+}

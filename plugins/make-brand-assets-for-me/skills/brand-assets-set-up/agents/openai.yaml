@@ -1,0 +1,4 @@
+interface:
+  display_name: "Set Up My Brand"
+  short_description: "Turn brand examples into simple reusable rules"
+  default_prompt: "Use $brand-assets-set-up to set up my brand from the examples I provide."

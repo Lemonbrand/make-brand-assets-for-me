@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "asset_job": "Website handoff scene",
+  "brand_id": "cut-paper",
+  "route": "new",
+  "parts": [
+    "cut-paper-handoff-scene"
+  ],
+  "prompt": "A wide editorial scene of two simplified people passing one task card into a completion tray, layered cut paper with visible fibers, full subject in the left 42 percent, right 55 percent calm cream copy space, no text, no logo, 16:9.",
+  "output_path": "../gallery/outputs/cut-paper-handoff-scene.png",
+  "checks": {
+    "format": "pass",
+    "dimensions": "pass",
+    "brand_match": "manual baseline review",
+    "plain_meaning": "manual baseline review"
+  },
+  "publish_status": "baseline",
+  "file": {
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": false,
+    "sha256": "161bb681ae347b07c3f3d1b0200a4830e2bfcf7bb9fb1b126d207a55afa06ba7"
+  }
+}

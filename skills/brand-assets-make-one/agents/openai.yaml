@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make One Brand Asset"
+  short_description: "Make one clear PNG that matches your brand"
+  default_prompt: "Use $brand-assets-make-one to make one brand asset for this job."

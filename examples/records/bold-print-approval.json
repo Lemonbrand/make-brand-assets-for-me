@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "asset_job": "Approval token",
+  "brand_id": "bold-print",
+  "route": "new",
+  "parts": [
+    "bold-print-approval"
+  ],
+  "prompt": "A standalone approval token: a bold checked task card moving between two simplified hands, risograph print, coarse ink, cobalt blue, tomato red, sunflower yellow and black, transparent background, no words, no logo, generous padding.",
+  "output_path": "../gallery/outputs/bold-print-approval.png",
+  "checks": {
+    "format": "pass",
+    "dimensions": "pass",
+    "brand_match": "manual baseline review",
+    "plain_meaning": "manual baseline review"
+  },
+  "publish_status": "baseline",
+  "file": {
+    "width": 1254,
+    "height": 1254,
+    "has_alpha": true,
+    "sha256": "120b9e623cacc96a4f397cf3e44ad69fc49bd5df45d388017c3e2d67b69d7bc5"
+  }
+}

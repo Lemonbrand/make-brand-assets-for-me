@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make A Brand Asset Move"
+  short_description: "Add small clear motion to approved brand art"
+  default_prompt: "Use $brand-assets-make-move to add clear motion to this approved asset."

@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "asset_job": "Clarify",
+  "brand_id": "bold-print",
+  "route": "new",
+  "parts": [
+    "bold-print-clarify"
+  ],
+  "prompt": "One standalone magnifying glass focusing a clear checkpoint dot from a loose mess of shapes, bold risograph print, coarse ink, cobalt blue, tomato red, sunflower yellow and black, true transparent background, no text, no logo, generous padding.",
+  "output_path": "../gallery/outputs/bold-print-clarify.png",
+  "checks": {
+    "format": "pass",
+    "dimensions": "pass",
+    "brand_match": "manual baseline review",
+    "plain_meaning": "manual baseline review"
+  },
+  "publish_status": "baseline",
+  "file": {
+    "width": 1239,
+    "height": 1269,
+    "has_alpha": true,
+    "sha256": "8ead7963f85c785989f8742f9f6d07b7e777cdf375e540f9ebf7f5c9ac8e5e44"
+  }
+}

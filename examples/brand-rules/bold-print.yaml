@@ -1,0 +1,23 @@
+version: "1.0"
+brand_name: "Bold Print Example"
+brand_id: "bold-print"
+references:
+  use_as_is: []
+  change_from_this: []
+  look_only: []
+  do_not_use: ["logos", "words", "watermarks", "smooth gradients"]
+look:
+  materials: ["uncoated paper", "coarse ink"]
+  colors: ["ink black", "electric blue", "hot orange", "paper white"]
+  lines_and_shapes: ["bold blocks", "rough brush lines", "simple silhouettes"]
+  texture: ["halftone", "small print misalignment"]
+  shadows_and_depth: ["mostly flat", "tiny paper lift when needed"]
+  layout: ["high contrast", "strong reading order"]
+  type: ["keep type outside generated pictures"]
+  motion: ["small snap or print reveal"]
+checks:
+  thumbnail_size_px: 160
+  minimum_padding_percent: 8
+  allow_accidental_text: false
+rights:
+  user_confirms_permission: true

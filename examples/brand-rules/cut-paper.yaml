@@ -1,0 +1,23 @@
+version: "1.0"
+brand_name: "Cut Paper Example"
+brand_id: "cut-paper"
+references:
+  use_as_is: []
+  change_from_this: []
+  look_only: []
+  do_not_use: ["logos", "words", "watermarks", "glossy 3D"]
+look:
+  materials: ["fibrous paper", "cut card"]
+  colors: ["cream", "tomato red", "sky blue", "soft black"]
+  lines_and_shapes: ["hand-cut edges", "simple bold shapes"]
+  texture: ["visible paper grain"]
+  shadows_and_depth: ["small close shadows"]
+  layout: ["one clear focal group", "generous empty space"]
+  type: ["keep type outside generated pictures"]
+  motion: ["small paper shifts only"]
+checks:
+  thumbnail_size_px: 160
+  minimum_padding_percent: 8
+  allow_accidental_text: false
+rights:
+  user_confirms_permission: true

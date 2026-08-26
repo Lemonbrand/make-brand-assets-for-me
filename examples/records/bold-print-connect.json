@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "asset_job": "Connect",
+  "brand_id": "bold-print",
+  "route": "new",
+  "parts": [
+    "bold-print-connect"
+  ],
+  "prompt": "One standalone task card traveling on a branching route toward one of three abstract people, bold risograph print, coarse ink, cobalt blue, tomato red, sunflower yellow and black, true transparent background, no text, no logo, generous padding.",
+  "output_path": "../gallery/outputs/bold-print-connect.png",
+  "checks": {
+    "format": "pass",
+    "dimensions": "pass",
+    "brand_match": "manual baseline review",
+    "plain_meaning": "manual baseline review"
+  },
+  "publish_status": "baseline",
+  "file": {
+    "width": 1171,
+    "height": 1343,
+    "has_alpha": true,
+    "sha256": "a07f4d7d7ca233590ed5c716ddfc3ca5627bd29aa2a60ead69cd971d6807d30f"
+  }
+}

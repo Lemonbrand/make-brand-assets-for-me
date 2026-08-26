@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Asset receipt",
+  "type": "object",
+  "required": ["version", "asset_job", "brand_id", "route", "parts", "prompt", "output_path", "checks", "publish_status"],
+  "properties": {
+    "version": {"type": "string"},
+    "asset_job": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string"},
+    "route": {"enum": ["reuse", "adapt", "new", "look_only"]},
+    "parts": {"type": "array"},
+    "prompt": {"type": "string"},
+    "output_path": {"type": "string"},
+    "checks": {"type": "object"},
+    "publish_status": {"enum": ["private_draft", "review_required", "approved"]}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "make-brand-assets-for-me",
+  "version": "0.1.0",
+  "description": "Turn your own brand examples into clear rules, matching PNG assets, scenes, sets, and simple motion.",
+  "author": {
+    "name": "Lemonbrand",
+    "email": "hello@lemonbrand.io",
+    "url": "https://lemonbrand.io"
+  },
+  "homepage": "https://lemonbrand.io",
+  "repository": "https://github.com/Lemonbrand/make-brand-assets-for-me",
+  "license": "MIT",
+  "keywords": ["brand", "images", "assets", "design", "workflow", "agent-skills"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Make Brand Assets For Me",
+    "shortDescription": "Make new visual assets that match your brand",
+    "longDescription": "Show it your approved brand examples. It writes simple rules, plans what to reuse or make, checks the result, and saves a clear record.",
+    "developerName": "Lemonbrand",
+    "category": "Productivity",
+    "capabilities": ["Images", "Files", "Workflows"],
+    "websiteURL": "https://lemonbrand.io",
+    "privacyPolicyURL": "https://lemonbrand.io/privacy",
+    "termsOfServiceURL": "https://lemonbrand.io/terms",
+    "brandColor": "#3157F6",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo-light.png",
+    "logoDark": "./assets/logo-dark.png",
+    "defaultPrompt": [
+      "Set up my brand from these examples.",
+      "Make one brand asset for human approval.",
+      "Turn this four-step method into an asset set."
+    ]
+  }
+}

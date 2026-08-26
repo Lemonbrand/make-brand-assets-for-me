@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "asset_job": "Approval token",
+  "brand_id": "cut-paper",
+  "route": "new",
+  "parts": [
+    "cut-paper-approval"
+  ],
+  "prompt": "A standalone approval token: one hand passing a green check card to another hand, layered cut-paper editorial collage, visible paper fibers, forest green, cobalt blue, tomato red, ochre and cream, transparent background, no words, no logo, generous padding.",
+  "output_path": "../gallery/outputs/cut-paper-approval.png",
+  "checks": {
+    "format": "pass",
+    "dimensions": "pass",
+    "brand_match": "manual baseline review",
+    "plain_meaning": "manual baseline review"
+  },
+  "publish_status": "baseline",
+  "file": {
+    "width": 1254,
+    "height": 1254,
+    "has_alpha": true,
+    "sha256": "9d07c2cbcaaf935e80f89d9ce5edf4bede1c24f50e0d05a331b9fecae317bbe9"
+  }
+}

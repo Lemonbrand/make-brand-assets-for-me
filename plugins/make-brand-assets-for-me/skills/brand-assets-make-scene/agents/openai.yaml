@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make A Brand Scene"
+  short_description: "Make one brand scene with safe room for copy"
+  default_prompt: "Use $brand-assets-make-scene to make a brand scene for this surface."

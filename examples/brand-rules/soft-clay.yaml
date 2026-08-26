@@ -1,0 +1,23 @@
+version: "1.0"
+brand_name: "Soft Clay Example"
+brand_id: "soft-clay"
+references:
+  use_as_is: []
+  change_from_this: []
+  look_only: []
+  do_not_use: ["logos", "words", "watermarks", "sharp chrome"]
+look:
+  materials: ["matte clay", "soft rubber"]
+  colors: ["cobalt", "peach", "lavender", "warm white"]
+  lines_and_shapes: ["rounded modules", "simple friendly geometry"]
+  texture: ["very light handmade surface"]
+  shadows_and_depth: ["diffuse studio shadows", "shallow depth"]
+  layout: ["calm spacing", "one clear focal group"]
+  type: ["keep type outside generated pictures"]
+  motion: ["small springy movement"]
+checks:
+  thumbnail_size_px: 160
+  minimum_padding_percent: 8
+  allow_accidental_text: false
+rights:
+  user_confirms_permission: true

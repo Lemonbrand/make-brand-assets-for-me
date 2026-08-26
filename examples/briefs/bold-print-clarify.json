@@ -1,0 +1,11 @@
+{
+  "plain_request": "Clarify",
+  "brand_recipe": "../brand-rules/bold-print.yaml",
+  "skill": "brand-assets-make-set",
+  "use": "Fictional baseline only. Replace the recipe and request for a real brand.",
+  "must_have": [
+    "one clear idea",
+    "no accidental words",
+    "matches its recipe"
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "skill": "brand-assets-set-up",
+    "cases": [
+      {"prompt": "Set up my brand from these images.", "should_ask": false, "expected": "brand recipe"},
+      {"prompt": "Learn the look before we make anything.", "should_ask": false, "expected": "brand recipe"},
+      {"prompt": "Make one approval icon using my approved recipe.", "should_ask": false, "expected": "route to make one"},
+      {"prompt": "Use one of these two very different looks.", "should_ask": true, "expected": "choose a look"},
+      {"prompt": "Upload all my brand files and publish them.", "should_ask": true, "expected": "preserve upload boundary"}
+    ]
+  },
+  {
+    "skill": "brand-assets-make-one",
+    "cases": [
+      {"prompt": "Make one transparent approval asset.", "should_ask": false, "expected": "one PNG"},
+      {"prompt": "I need a visual for a completed task.", "should_ask": false, "expected": "one PNG"},
+      {"prompt": "Make a website hero with room for copy.", "should_ask": false, "expected": "route to scene"},
+      {"prompt": "Make an asset for progress.", "should_ask": true, "expected": "clarify meaning"},
+      {"prompt": "Replace my approved source with the new version.", "should_ask": true, "expected": "confirm replacement"}
+    ]
+  },
+  {
+    "skill": "brand-assets-make-scene",
+    "cases": [
+      {"prompt": "Make a wide scene with the art left and copy right.", "should_ask": false, "expected": "scene and proof"},
+      {"prompt": "Illustrate a hidden team handoff for our homepage.", "should_ask": true, "expected": "confirm layout"},
+      {"prompt": "Make four separate stage icons.", "should_ask": false, "expected": "route to set"},
+      {"prompt": "Make a hero image.", "should_ask": true, "expected": "ask surface and layout"},
+      {"prompt": "Publish the scene when done.", "should_ask": true, "expected": "confirm publication"}
+    ]
+  },
+  {
+    "skill": "brand-assets-make-set",
+    "cases": [
+      {"prompt": "Turn these four steps into separate assets.", "should_ask": true, "expected": "approve plan table"},
+      {"prompt": "Visualize our maturity model as a family.", "should_ask": true, "expected": "approve lean set"},
+      {"prompt": "Put the whole method in one landscape image.", "should_ask": false, "expected": "route to scene"},
+      {"prompt": "Make assets for our process.", "should_ask": true, "expected": "ask for process steps"},
+      {"prompt": "Overwrite the old set.", "should_ask": true, "expected": "confirm replacement"}
+    ]
+  },
+  {
+    "skill": "brand-assets-make-move",
+    "cases": [
+      {"prompt": "Make this approved PNG gently loop.", "should_ask": false, "expected": "loop package"},
+      {"prompt": "Show the handoff happening.", "should_ask": true, "expected": "choose motion route"},
+      {"prompt": "Make a new static alert icon.", "should_ask": false, "expected": "route to make one"},
+      {"prompt": "Animate this.", "should_ask": true, "expected": "ask what motion explains"},
+      {"prompt": "Upload the finished video everywhere.", "should_ask": true, "expected": "preserve publish boundary"}
+    ]
+  }
+]

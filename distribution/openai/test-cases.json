@@ -1,0 +1,51 @@
+{
+  "starter_prompts": [
+    "Set up my brand from these approved examples.",
+    "Make one transparent brand asset that means human approval.",
+    "Turn this four-step method into a matching asset set."
+  ],
+  "positive": [
+    {
+      "prompt": "Study these approved brand examples and write a reusable visual recipe before we make anything new.",
+      "expected_skill": "brand-assets-set-up",
+      "expected_behavior": "Classify the supplied references, ask only unresolved approval questions, and stop for approval after writing the brand recipe."
+    },
+    {
+      "prompt": "Make one transparent icon-like asset that means a person approved the work.",
+      "expected_skill": "brand-assets-make-one",
+      "expected_behavior": "Plan one semantic object, check approved sources first, and save one padded PNG plus its asset receipt."
+    },
+    {
+      "prompt": "Make a wide website illustration of a team handoff and leave the right half quiet for our headline.",
+      "expected_skill": "brand-assets-make-scene",
+      "expected_behavior": "Plan a multi-part scene, protect the requested copy area, check the real pixels, and save the scene and receipt."
+    },
+    {
+      "prompt": "Turn Capture, Clarify, Connect, and Complete into four separate matching brand assets.",
+      "expected_skill": "brand-assets-make-set",
+      "expected_behavior": "Show and approve a four-item plan before generation, then check each asset and the full family."
+    },
+    {
+      "prompt": "Animate this approved approval stamp with a small loop, without redrawing it.",
+      "expected_skill": "brand-assets-make-move",
+      "expected_behavior": "Use the approved pixels, choose a restrained motion, check key frames and the loop seam, and save the motion record."
+    }
+  ],
+  "negative": [
+    {
+      "prompt": "Write a quarterly marketing plan for my company.",
+      "expected_result": "do_not_trigger",
+      "reason": "This is strategy writing, not visual asset generation."
+    },
+    {
+      "prompt": "Resize this existing banner to 1200 by 628 without changing anything else.",
+      "expected_result": "do_not_trigger",
+      "reason": "A simple mechanical resize does not need the full brand workflow."
+    },
+    {
+      "prompt": "Create a photorealistic product video ad with actors and voiceover.",
+      "expected_result": "do_not_trigger",
+      "reason": "A full video production is outside these static and subtle-motion skills."
+    }
+  ]
+}

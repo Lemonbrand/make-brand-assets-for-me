@@ -1,0 +1,11 @@
+{
+  "plain_request": "Website handoff scene",
+  "brand_recipe": "../brand-rules/cut-paper.yaml",
+  "skill": "brand-assets-make-scene",
+  "use": "Fictional baseline only. Replace the recipe and request for a real brand.",
+  "must_have": [
+    "one clear idea",
+    "no accidental words",
+    "matches its recipe"
+  ]
+}

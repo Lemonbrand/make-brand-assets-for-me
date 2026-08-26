@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "asset_job": "Approval token",
+  "brand_id": "soft-clay",
+  "route": "new",
+  "parts": [
+    "soft-clay-approval"
+  ],
+  "prompt": "A standalone approval token: two rounded friendly hands passing a checked task tile, tactile matte clay, sky blue, coral, butter yellow and off-white, soft studio light, transparent background, no words, no logo, generous padding.",
+  "output_path": "../gallery/outputs/soft-clay-approval.png",
+  "checks": {
+    "format": "pass",
+    "dimensions": "pass",
+    "brand_match": "manual baseline review",
+    "plain_meaning": "manual baseline review"
+  },
+  "publish_status": "baseline",
+  "file": {
+    "width": 1254,
+    "height": 1254,
+    "has_alpha": true,
+    "sha256": "39c7ed969ea3e9e1771c1bc55225d8115d44ccd2d24a92d43dc7b30bf07cbc7d"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "make-brand-assets-for-me",
+  "version": "0.1.0",
+  "description": "Turn your own brand examples into clear rules, matching PNG assets, scenes, sets, and simple motion.",
+  "author": {
+    "name": "Lemonbrand",
+    "email": "hello@lemonbrand.io",
+    "url": "https://lemonbrand.io"
+  },
+  "homepage": "https://lemonbrand.io",
+  "repository": "https://github.com/Lemonbrand/make-brand-assets-for-me",
+  "license": "MIT",
+  "keywords": ["brand", "images", "assets", "design", "workflow", "agent-skills"]
+}
