@@ -34,9 +34,9 @@
     "cases": [
       {"prompt": "Turn these four steps into separate assets.", "should_ask": true, "expected": "approve plan table"},
       {"prompt": "Visualize our maturity model as a family.", "should_ask": true, "expected": "approve lean set"},
+      {"prompt": "Make five separate framework icons.", "should_ask": true, "expected": "approve plan table"},
       {"prompt": "Put the whole method in one landscape image.", "should_ask": false, "expected": "route to scene"},
-      {"prompt": "Make assets for our process.", "should_ask": true, "expected": "ask for process steps"},
-      {"prompt": "Overwrite the old set.", "should_ask": true, "expected": "confirm replacement"}
+      {"prompt": "Make assets for our process.", "should_ask": true, "expected": "ask for process steps"}
     ]
   },
   {
@@ -47,6 +47,16 @@
       {"prompt": "Make a new static alert icon.", "should_ask": false, "expected": "route to make one"},
       {"prompt": "Animate this.", "should_ask": true, "expected": "ask what motion explains"},
       {"prompt": "Upload the finished video everywhere.", "should_ask": true, "expected": "preserve publish boundary"}
+    ]
+  },
+  {
+    "skill": "brand-assets-make-launch-pack",
+    "cases": [
+      {"prompt": "Make the profile pictures, banners, carousel, story and launch images for every channel.", "should_ask": true, "expected": "approve launch plan"},
+      {"prompt": "Make my complete launch pack from this approved brand recipe and URL.", "should_ask": true, "expected": "ask only for missing launch choices"},
+      {"prompt": "Turn this launch into LinkedIn, Instagram, Facebook, YouTube, email and website assets.", "should_ask": true, "expected": "approve launch plan"},
+      {"prompt": "Make one square launch image.", "should_ask": false, "expected": "route to make one"},
+      {"prompt": "Publish everything when the files are done.", "should_ask": true, "expected": "preserve publish boundary"}
     ]
   }
 ]

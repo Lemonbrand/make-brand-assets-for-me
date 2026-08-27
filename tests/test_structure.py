@@ -17,6 +17,7 @@ def test_plugin_and_skills_exist():
         "brand-assets-make-scene",
         "brand-assets-make-set",
         "brand-assets-make-move",
+        "brand-assets-make-launch-pack",
     }
     actual = {
         path.name
@@ -24,6 +25,24 @@ def test_plugin_and_skills_exist():
         if (path / "SKILL.md").exists()
     }
     assert actual == expected
+
+
+def test_launch_pack_skill_has_complete_entrypoint():
+    skill = PLUGIN / "skills" / "brand-assets-make-launch-pack"
+    required = {
+        "SKILL.md",
+        "agents/openai.yaml",
+        "references/ask-the-user.md",
+        "references/check-the-launch-pack.md",
+        "references/five-steps.md",
+        "references/channel-placements.json",
+    }
+    actual = {
+        str(path.relative_to(skill))
+        for path in skill.rglob("*")
+        if path.is_file()
+    } if skill.exists() else set()
+    assert required <= actual
 
 
 def test_marketplace_points_to_plugin():

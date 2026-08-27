@@ -9,6 +9,7 @@ EXPECTED_SKILLS = {
     "brand-assets-make-scene",
     "brand-assets-make-set",
     "brand-assets-make-move",
+    "brand-assets-make-launch-pack",
 }
 
 

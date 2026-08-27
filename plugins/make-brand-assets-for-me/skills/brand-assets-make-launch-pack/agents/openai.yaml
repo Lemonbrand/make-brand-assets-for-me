@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make My Launch Pack"
+  short_description: "Make every launch asset from one clear idea"
+  default_prompt: "Use $brand-assets-make-launch-pack to make a complete launch pack for this offer."

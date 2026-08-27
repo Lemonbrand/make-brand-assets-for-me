@@ -10,6 +10,7 @@ SKILLS = {
     "brand-assets-make-scene",
     "brand-assets-make-set",
     "brand-assets-make-move",
+    "brand-assets-make-launch-pack",
 }
 
 
@@ -41,7 +42,7 @@ def check_package(root):
     skills_dir = root / "plugins/make-brand-assets-for-me/skills"
     found = {path.name for path in skills_dir.iterdir() if path.is_dir()} if skills_dir.exists() else set()
     if found != SKILLS:
-        errors.append(f"Expected five skills, found: {', '.join(sorted(found))}")
+        errors.append(f"Expected six skills, found: {', '.join(sorted(found))}")
     for name in SKILLS:
         for relative in ("SKILL.md", "agents/openai.yaml"):
             if not (skills_dir / name / relative).exists():
@@ -50,7 +51,7 @@ def check_package(root):
     public_skills_dir = root / "skills"
     public_found = {path.name for path in public_skills_dir.iterdir() if path.is_dir()} if public_skills_dir.exists() else set()
     if public_found != SKILLS:
-        errors.append(f"Expected five public skills, found: {', '.join(sorted(public_found))}")
+        errors.append(f"Expected six public skills, found: {', '.join(sorted(public_found))}")
 
     counts = {
         "baseline PNGs": (root / "examples/gallery/outputs", "*.png", 10),
@@ -106,7 +107,7 @@ def main():
         for error in errors:
             print(f"FAIL: {error}")
         raise SystemExit(1)
-    print("PASS: the public package has five synchronized skills, two plugin adapters, ten baselines, four proofs, three screenshots, and its required files.")
+    print("PASS: the public package has six synchronized skills, two plugin adapters, ten baselines, four proofs, three screenshots, and its required files.")
 
 
 if __name__ == "__main__":
