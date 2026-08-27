@@ -3,7 +3,14 @@
   "asset_id": "product-hunt-gallery-02",
   "placement_id": "product-hunt-gallery",
   "output_path": "assets/product-hunt-gallery-02.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "c6e7c8236efad3894cc358e6e80d9ad8f865e8343fe1d29fa2603636b7467d84"
+  "sha256": "93b1ef0a4670dab15231468d07cce6e864e867cd90f082f57b7a90cc93a89f3f"
 }

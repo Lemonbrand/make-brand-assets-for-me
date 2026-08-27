@@ -3,7 +3,14 @@
   "asset_id": "social-landscape",
   "placement_id": "social-landscape",
   "output_path": "assets/social-landscape.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "204a37d82d2950824b40bab305b9c1c76ab7e0d25229d2bf193d7faa9c1c427e"
+  "sha256": "875f4ce79e909f874a50fd3f2b75e138f9fa23355cb234558668c8b3ba56175a"
 }

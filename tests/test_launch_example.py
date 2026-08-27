@@ -8,6 +8,7 @@ from PIL import Image, ImageStat
 ROOT = Path(__file__).parents[1]
 CAMPAIGN = ROOT / "examples/launch-pack/lemonbrand"
 SCRIPT = ROOT / "scripts/build_launch_example.py"
+FONT = ROOT / "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf"
 
 
 def load_builder():
@@ -137,6 +138,37 @@ def test_every_raster_uses_a_background_and_fewer_than_fifteen_overlay_words():
         assert background.exists(), asset["id"]
         assert background.parent.name == "backgrounds"
         assert 0 <= receipt["overlay_word_count"] < 15, asset["id"]
+
+
+def test_every_raster_uses_the_bundled_bold_condensed_brand_font():
+    load_builder()(ROOT, CAMPAIGN)
+    manifest = json.loads((CAMPAIGN / "campaign-manifest.json").read_text())
+
+    assert FONT.exists()
+    for asset in manifest["assets"]:
+        if asset["format"] != "png":
+            continue
+        receipt = json.loads((CAMPAIGN / "receipts" / f"{asset['id']}.json").read_text())
+        assert receipt["font"] == {
+            "family": "Instrument Sans",
+            "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+            "license": "SIL Open Font License 1.1",
+            "weight": 700,
+            "width": 82,
+            "variation_applied": True,
+        }
+
+
+def test_launch_builder_refuses_to_fall_back_when_the_brand_font_is_missing(tmp_path):
+    module = load_builder_module()
+
+    missing = tmp_path / "missing-font.ttf"
+    try:
+        module.load_brand_font(36, path=missing)
+    except FileNotFoundError as error:
+        assert str(missing) in str(error)
+    else:
+        raise AssertionError("A missing brand font must fail instead of using a generic fallback")
 
 
 def test_finished_pngs_use_a_compact_indexed_palette():

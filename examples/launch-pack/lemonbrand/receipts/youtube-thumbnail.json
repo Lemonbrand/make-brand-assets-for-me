@@ -3,7 +3,14 @@
   "asset_id": "youtube-thumbnail",
   "placement_id": "youtube-thumbnail",
   "output_path": "assets/youtube-thumbnail.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "bf9fdf8b43e0d68fdc0aacbce4c471b513a165397373008bb13aa00d38b0e1a0"
+  "sha256": "9667697f10ea8c84e88e9f99db282e51994dafd0f74c935d634ce627ecef6549"
 }

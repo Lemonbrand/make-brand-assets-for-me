@@ -3,7 +3,14 @@
   "asset_id": "social-portrait",
   "placement_id": "social-portrait",
   "output_path": "assets/social-portrait.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "d244836c8b919e0db788f75d5bb0083c2f8b64c82fc3ccde817a311fa7853a31"
+  "sha256": "7cf5f6d6dd55c45362a09d2cd09ee4ef0227e9d8740046f538d8127e80977e32"
 }

@@ -22,8 +22,8 @@
     },
     {
       "id": "fact-six-skills",
-      "text": "Version 0.2.1 contains six plain-language skills, including Make My Launch Pack.",
-      "source_url": "https://github.com/Lemonbrand/make-brand-assets-for-me/releases/tag/v0.2.1"
+      "text": "Version 0.2.2 contains six plain-language skills, including Make My Launch Pack, with deterministic portable typography.",
+      "source_url": "https://github.com/Lemonbrand/make-brand-assets-for-me/releases/tag/v0.2.2"
     },
     {
       "id": "fact-self-proof",
@@ -50,7 +50,7 @@
       "height": 400,
       "format": "png",
       "alt_text": "Torn-paper brand cards, a magnifier and a checking jig below the words Make Assets.",
-      "sha256": "3be40061a4f08814ade3286bef94c87894575eb24215a25f8353d3690a104e39",
+      "sha256": "2e7dae726d13372a64924e1ab555631f220cb537448b55a8887d7abdf11c7ac4",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -67,7 +67,7 @@
       "height": 500,
       "format": "png",
       "alt_text": "Wide paper-collage cover showing visual cards becoming a checked brand family.",
-      "sha256": "6021c1b54912defc7e881f0cd9041506d42b700ed9a85ac3d938628f208f0ffb",
+      "sha256": "362321f94894115e8d7ce009df341d9fb1b416b1ff78933c45952b799abcaf4a",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -84,7 +84,7 @@
       "height": 396,
       "format": "png",
       "alt_text": "Wide editorial cover asking a brand not to start over, beside a paper asset workshop.",
-      "sha256": "ece4062725c9278379b3535687c58abf951b7612a24f2242052d8ef3df4f10a6",
+      "sha256": "377346006d7c3b55fc513c0b4055ef8c4b327a1a89d0c911d476b9e1bcfb9ae9",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -101,7 +101,7 @@
       "height": 700,
       "format": "png",
       "alt_text": "Ultra-wide paper-collage cover showing visual cards inspected and organized.",
-      "sha256": "8c81fcb04c50d765ed89087c79bf7b2dabedb08097d99c11ee42079c6ffe2db8",
+      "sha256": "67674474da37a4d6094329ad7397892cc8cafa9bfdfaa27cb847a4746c176fee",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -118,7 +118,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Square torn-paper workshop with the words Make Brand Assets For Me.",
-      "sha256": "b309680ba394b264fda211f1013297df845586995ab4cb0b9f4310ffb924634e",
+      "sha256": "4b94b4e9564343586676da5699777686965a3a9c21707376ab64118b82685cd0",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -135,7 +135,7 @@
       "height": 1350,
       "format": "png",
       "alt_text": "Portrait paper workshop showing varied cards becoming one checked family.",
-      "sha256": "d244836c8b919e0db788f75d5bb0083c2f8b64c82fc3ccde817a311fa7853a31",
+      "sha256": "7cf5f6d6dd55c45362a09d2cd09ee4ef0227e9d8740046f538d8127e80977e32",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -152,7 +152,7 @@
       "height": 627,
       "format": "png",
       "alt_text": "Landscape paper workshop with the words One Idea. Every Format.",
-      "sha256": "204a37d82d2950824b40bab305b9c1c76ab7e0d25229d2bf193d7faa9c1c427e",
+      "sha256": "875f4ce79e909f874a50fd3f2b75e138f9fa23355cb234558668c8b3ba56175a",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -169,7 +169,7 @@
       "height": 1920,
       "format": "png",
       "alt_text": "Vertical editorial cover showing a low paper assembly line below a quiet copy field.",
-      "sha256": "45fe8215f9481d699d4b776c60230ffd59ee9af94487e8089d6ba00064e6c8e3",
+      "sha256": "e35d6a23ae556640cd32aa0e6eb04136770f18ded2f3ec827b5851181c7e7389",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -186,7 +186,7 @@
       "height": 630,
       "format": "png",
       "alt_text": "Paper cards move through a checking station beside Make Brand Assets For Me.",
-      "sha256": "d4b133842ef852607c5bda3b8386b667046b806a3fbae25697d9fd08be85ee5c",
+      "sha256": "bab12576da8dca50865104a2a2c7de20c65e9b02aeba1c069be4a30d943a630d",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -203,7 +203,7 @@
       "height": 600,
       "format": "png",
       "alt_text": "Editorial paper asset workshop beside the words Your Brand. Ready To Move.",
-      "sha256": "dee2e6cb2854096a10752203cf3109cbfca7b132edd0c7a8d80a10ee8f323448",
+      "sha256": "5ccf43f36b0fd044224ef0213799f68bc6bd97810c5b43027f52d639aa1e2523",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -220,7 +220,7 @@
       "height": 240,
       "format": "png",
       "alt_text": "Square paper asset workshop with the words Make Assets.",
-      "sha256": "9b67441d02b21b1dce8cd8f0806d48024bcc5538d6c7b56d6c59d43cc3853f9d",
+      "sha256": "b9285080d3db33c6a9b396fe97846a8c3002c2fbe1e2cf910b4903ab3574b624",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -237,7 +237,7 @@
       "height": 760,
       "format": "png",
       "alt_text": "Paper asset workshop beside Five Steps. One Brand System.",
-      "sha256": "f4887976856bf413f2f08ec72b8dcd4ffbe11e091995de1c6323a254cbb87a34",
+      "sha256": "383f5768e41f31504ff18a03438ea18dcdfa4deb9e9b15bd050b79e650893875",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -254,7 +254,7 @@
       "height": 760,
       "format": "png",
       "alt_text": "Paper asset workshop beside One Method. Every Format.",
-      "sha256": "c6e7c8236efad3894cc358e6e80d9ad8f865e8343fe1d29fa2603636b7467d84",
+      "sha256": "93b1ef0a4670dab15231468d07cce6e864e867cd90f082f57b7a90cc93a89f3f",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -271,7 +271,7 @@
       "height": 2160,
       "format": "png",
       "alt_text": "Paper asset workshop beside Your Brand Should Not Start Over.",
-      "sha256": "bf9fdf8b43e0d68fdc0aacbce4c471b513a165397373008bb13aa00d38b0e1a0",
+      "sha256": "9667697f10ea8c84e88e9f99db282e51994dafd0f74c935d634ce627ecef6549",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -288,7 +288,7 @@
       "height": 1350,
       "format": "png",
       "alt_text": "LinkedIn carousel page 1 of 5: Make Brand Assets For Me.",
-      "sha256": "242ac87b2bd300c1dd3a943fc4469014c9ff92c8f7162943d74b4d3e13828896",
+      "sha256": "cc030dee9ec4efa7239958d9d8a7db137b90a584cfbdb6b5f3e63eab67246da1",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -305,7 +305,7 @@
       "height": 1350,
       "format": "png",
       "alt_text": "LinkedIn carousel page 2 of 5: Your Brand Should Not Start Over Every Time.",
-      "sha256": "cee405b22708f88ddbe3bbf2900a2e4923a840f471261b77d4029b46a3c4e746",
+      "sha256": "efca9eb3b977421b381b644791f6b3ee7c2ae7c30e6f5ab9d3ca08157fc4093d",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -322,7 +322,7 @@
       "height": 1350,
       "format": "png",
       "alt_text": "LinkedIn carousel page 3 of 5: Show. Plan. Make. Check. Save..",
-      "sha256": "18bfc8a632402b15a681048a78a7b809fe0c79e62788308e7e4ad871c9f156fb",
+      "sha256": "c422757eee3c8a5f6d02198bc88758d91b52ac1f2de0edafe9d25184bcfd9fb0",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -339,7 +339,7 @@
       "height": 1350,
       "format": "png",
       "alt_text": "LinkedIn carousel page 4 of 5: Make My Launch Pack.",
-      "sha256": "6058a30301ad71b565380492d086213dfd4fb53fc702cc11e3e9f5cdaaccf52e",
+      "sha256": "80592549f5fcad7aa5f1a16369c4211ee89051817380c2d5e71323bdb987cd6f",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -356,7 +356,7 @@
       "height": 1350,
       "format": "png",
       "alt_text": "LinkedIn carousel page 5 of 5: It Made This Launch Pack.",
-      "sha256": "270893a652e2d6732487be45e813c347f58aa18dd4a8a76d101ef12dc2985822",
+      "sha256": "ceddd4426465d3aad4baee39f934a58965f073ca1eca7d0db55e6846ec4bd674",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -373,7 +373,7 @@
       "height": 1350,
       "format": "pdf",
       "alt_text": "Five-page document introducing Make Brand Assets For Me.",
-      "sha256": "be48666a41ea975bf1e4ea75ba9056d7160bdfc87a8adfd2e6bc96870f15614d",
+      "sha256": "d146ed31b94a68674fdddc6e139e27a88611cdae22381111180e1357a9b7c298",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -391,7 +391,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 1 of 10: Make Brand Assets For Me.",
-      "sha256": "e34d034a190d13a1b4d9cd6c8fbcb85ac2fa77c39e740d0a8a4eca88ab0ca1a2",
+      "sha256": "29d6cc6444574b2ac2dbe1f24105d18d71bd6a546aa02a64a166e90ffa620605",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -408,7 +408,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 2 of 10: Show It Your Brand.",
-      "sha256": "9a8eff80d4326d4ce3bb3d54812e01695dac5885ec1b545f9f60ab1526e4c79e",
+      "sha256": "2dcdd86cab03f23bdc6e14a77404dcc7f48ca0a8f46c0beecda923aaa5fb0e22",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -425,7 +425,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 3 of 10: Plan One Clear Job.",
-      "sha256": "52a1d318ed0d874c3c5d856e3dcfae1cfc793e8fd5a0fa48e4b26c306da7a391",
+      "sha256": "ee68f22f448c87c72ff8dfa8c4c3e01023aa009884dfea84b8c87fc463200883",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -442,7 +442,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 4 of 10: Make The Smallest Useful Thing.",
-      "sha256": "10b4f69a7f5da61adf4c11ce15d3ffa40cf81451982e00ec3808d6dedc88c485",
+      "sha256": "8256434a415d758904ea64feeb5862ff231267dfe64aa1c976e52947287a2d20",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -459,7 +459,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 5 of 10: Check It Against Real Examples.",
-      "sha256": "4cf99cedb3b9c719b757617abd938bfa571fb1773349b3e1afb2e75176b89c12",
+      "sha256": "97c6d93b62c2c6762bc3da169d5d9d0b51fe146fd3d4c6252284464747927be0",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -476,7 +476,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 6 of 10: Save The File And Receipt.",
-      "sha256": "3407f78ee3438666f53d47ba4d6cc1026f817b574efef2ef7e22a22cd04b3550",
+      "sha256": "3c927894444d54b2f69eb7f6de4451ef9189cfdc839ed4e19279bc87e1ce3c54",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -493,7 +493,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 7 of 10: Make A Whole Launch Pack.",
-      "sha256": "309934d0140649b0b986c045cd295a65f8fbf2b26a53061fe3d398f26842168b",
+      "sha256": "85b2a25719db4b9c98b07760296f940313f80aca299ce8f4b87d41a4d7666df0",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -510,7 +510,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 8 of 10: Copy. Alt Text. Links. Manifest..",
-      "sha256": "999ad63909f83125332d5265f88663404bc3f7d515de84d142628b257f829d17",
+      "sha256": "ac58f8106f5b1dc7c43a9c33ba04298e2723a6a80a9f25a5724801e2f1f8a806",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -527,7 +527,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 9 of 10: It Made These Graphics Too.",
-      "sha256": "5acf1c9d432416bd434c0172dc0af8e7c4e6177222058af4129afc92ec71d563",
+      "sha256": "d4787a4a2bb10dd7d5e16a519fdbb71973de928ae165cf9f90978f18fdec3b41",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",
@@ -544,7 +544,7 @@
       "height": 1080,
       "format": "png",
       "alt_text": "Social carousel page 10 of 10: Free On Github.",
-      "sha256": "2228020fedf48a5bd8bca2dce4f31b362d411e8461fa0a6146891cde2d72fc5a",
+      "sha256": "0aac77b09f9f390f8287edfeebffe1be1e389fbc04f6f1f79b3ce1f2264b7fb5",
       "claim_ids": [
         "fact-open-source",
         "fact-six-skills",

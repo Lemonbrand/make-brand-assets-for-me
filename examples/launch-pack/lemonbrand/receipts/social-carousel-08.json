@@ -3,7 +3,14 @@
   "asset_id": "social-carousel-08",
   "placement_id": "carousel-square",
   "output_path": "carousels/social/page-08.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "999ad63909f83125332d5265f88663404bc3f7d515de84d142628b257f829d17"
+  "sha256": "ac58f8106f5b1dc7c43a9c33ba04298e2723a6a80a9f25a5724801e2f1f8a806"
 }

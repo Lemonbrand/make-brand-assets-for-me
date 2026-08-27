@@ -3,7 +3,14 @@
   "asset_id": "open-graph",
   "placement_id": "open-graph",
   "output_path": "assets/open-graph.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "d4b133842ef852607c5bda3b8386b667046b806a3fbae25697d9fd08be85ee5c"
+  "sha256": "bab12576da8dca50865104a2a2c7de20c65e9b02aeba1c069be4a30d943a630d"
 }

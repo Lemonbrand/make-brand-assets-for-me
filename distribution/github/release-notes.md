@@ -1,4 +1,4 @@
-# Make Brand Assets For Me v0.2.1
+# Make Brand Assets For Me v0.2.2
 
 Show an AI your brand. Tell it what you need. Make assets that match.
 
@@ -14,6 +14,7 @@ This release includes:
 - a checked campaign manifest contract that keeps public asset intent separate from provider publication state;
 - a complete worked Lemonbrand launch pack with 29 PNGs, a five-page PDF, copy for seven channels, tracked links, 30 receipts, and a contact sheet;
 - five generated editorial background masters with protected negative space and 0-14 word overlays;
+- bundled Instrument Sans Bold/Condensed typography with exact variable-axis settings and no generic fallback;
 - an MIT license.
 
 ## Install
@@ -22,7 +23,7 @@ See the repository README for Codex, Claude Code, and skills.sh commands.
 
 ## Download
 
-Download `make-brand-assets-for-me-0.2.1.zip` below. The SHA-256 digest is stored in `release/manifest.json`.
+Download `make-brand-assets-for-me-0.2.2.zip` below. The SHA-256 digest is stored in `release/manifest.json`.
 
 ## Built by Lemonbrand
 

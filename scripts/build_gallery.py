@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import hashlib
 import json
+import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 from make_contact_sheet import make_contact_sheet
+from brand_type import load_brand_font
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,7 +89,7 @@ JOBS = {
 
 
 def default_font(size):
-    return ImageFont.load_default(size=size)
+    return load_brand_font(size, weight=700 if size >= 30 else 500, width=86 if size >= 30 else 96)
 
 
 def write_records():

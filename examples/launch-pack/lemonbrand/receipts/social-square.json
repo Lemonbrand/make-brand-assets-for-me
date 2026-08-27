@@ -3,7 +3,14 @@
   "asset_id": "social-square",
   "placement_id": "social-square",
   "output_path": "assets/social-square.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "b309680ba394b264fda211f1013297df845586995ab4cb0b9f4310ffb924634e"
+  "sha256": "4b94b4e9564343586676da5699777686965a3a9c21707376ab64118b82685cd0"
 }

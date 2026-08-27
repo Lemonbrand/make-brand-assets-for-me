@@ -3,7 +3,14 @@
   "asset_id": "email-header",
   "placement_id": "email-header",
   "output_path": "assets/email-header.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "dee2e6cb2854096a10752203cf3109cbfca7b132edd0c7a8d80a10ee8f323448"
+  "sha256": "5ccf43f36b0fd044224ef0213799f68bc6bd97810c5b43027f52d639aa1e2523"
 }

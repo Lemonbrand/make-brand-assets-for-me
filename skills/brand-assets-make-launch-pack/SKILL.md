@@ -53,8 +53,9 @@ For every raster asset family, use this recipe in order:
 2. Put one meaningful focal cluster in 35–45% of the canvas. Reserve the opposite 55–65% as protected negative space.
 3. Save and inspect the clean background master before adding copy. A generated background contains no text, letters, numbers, logos, labels, watermarks, or mock UI.
 4. Add one local text overlay inside the protected negative space. The complete visible overlay uses fewer than 15 words. Zero words is valid for a profile mark.
-5. Make a separate background master when a new aspect ratio would crop the focal cluster or shrink the protected field.
-6. Record `background_source` and `overlay_word_count` in the asset receipt.
+5. Use an approved font file that can travel with the pack. Apply its exact family, weight, width, and other variable axes in a deterministic local compositor. Never silently substitute Pillow's default font, Arial, or an unapproved system font. If the approved file is unavailable, stop and mark the asset `needs-review`.
+6. Make a separate background master when a new aspect ratio would crop the focal cluster or shrink the protected field.
+7. Record `background_source`, `overlay_word_count`, font file, family, license, weight, width, and whether its variation settings were applied in the asset receipt.
 
 The finished asset is an image with room for one short thought. The background carries the story; the words name it.
 

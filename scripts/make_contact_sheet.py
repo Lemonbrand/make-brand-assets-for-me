@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 import argparse
 import math
+import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from brand_type import load_brand_font
 
 
 def make_contact_sheet(paths, output_path, title="Review sheet", columns=3):
@@ -18,8 +26,8 @@ def make_contact_sheet(paths, output_path, title="Review sheet", columns=3):
     height = margin + title_height + rows * cell_height + (rows - 1) * gap + margin
     sheet = Image.new("RGB", (width, height), "#F5F2EC")
     draw = ImageDraw.Draw(sheet)
-    font = ImageFont.load_default(size=26)
-    label_font = ImageFont.load_default(size=18)
+    font = load_brand_font(30, weight=700, width=86)
+    label_font = load_brand_font(18, weight=600, width=94)
     draw.text((margin, margin), title, fill="#17151F", font=font)
 
     for index, path in enumerate(paths):

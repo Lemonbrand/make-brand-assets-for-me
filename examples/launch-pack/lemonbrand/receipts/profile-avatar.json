@@ -3,7 +3,14 @@
   "asset_id": "profile-avatar",
   "placement_id": "profile-avatar",
   "output_path": "assets/profile-avatar.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "3be40061a4f08814ade3286bef94c87894575eb24215a25f8353d3690a104e39"
+  "sha256": "2e7dae726d13372a64924e1ab555631f220cb537448b55a8887d7abdf11c7ac4"
 }

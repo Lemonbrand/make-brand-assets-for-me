@@ -3,7 +3,14 @@
   "asset_id": "story-vertical",
   "placement_id": "story-vertical",
   "output_path": "assets/story-vertical.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "45fe8215f9481d699d4b776c60230ffd59ee9af94487e8089d6ba00064e6c8e3"
+  "sha256": "e35d6a23ae556640cd32aa0e6eb04136770f18ded2f3ec827b5851181c7e7389"
 }

@@ -3,7 +3,14 @@
   "asset_id": "linkedin-carousel-05",
   "placement_id": "carousel-pdf",
   "output_path": "carousels/linkedin/page-05.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "270893a652e2d6732487be45e813c347f58aa18dd4a8a76d101ef12dc2985822"
+  "sha256": "ceddd4426465d3aad4baee39f934a58965f073ca1eca7d0db55e6846ec4bd674"
 }

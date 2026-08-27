@@ -7,13 +7,14 @@ import sys
 from pathlib import Path
 from urllib.parse import urlencode
 
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageOps
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from make_contact_sheet import make_contact_sheet
+from brand_type import font_receipt, load_brand_font
 
 
 PRIMARY = [
@@ -35,7 +36,7 @@ PRIMARY = [
 
 
 def font(size):
-    return ImageFont.load_default(size=max(10, int(size)))
+    return load_brand_font(size, weight=700, width=82)
 
 
 def read_json(path):
@@ -255,7 +256,7 @@ def build_launch_pack(root, campaign_dir):
             "asset_id": asset_id,
             "placement_id": placement_id,
             "output_path": relative,
-            "font": "Pillow bundled default",
+            "font": font_receipt(weight=700, width=82),
             "source_files": ["campaign.json", "source-facts.json", background_source],
             "background_source": background_source,
             "overlay_word_count": word_count,

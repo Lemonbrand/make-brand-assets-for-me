@@ -3,7 +3,14 @@
   "asset_id": "cover-wide",
   "placement_id": "cover-wide",
   "output_path": "assets/cover-wide.png",
-  "font": "Pillow bundled default",
+  "font": {
+    "family": "Instrument Sans",
+    "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
+    "license": "SIL Open Font License 1.1",
+    "weight": 700,
+    "width": 82,
+    "variation_applied": true
+  },
   "source_files": [
     "campaign.json",
     "source-facts.json",
@@ -16,5 +23,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "6021c1b54912defc7e881f0cd9041506d42b700ed9a85ac3d938628f208f0ffb"
+  "sha256": "362321f94894115e8d7ce009df341d9fb1b416b1ff78933c45952b799abcaf4a"
 }

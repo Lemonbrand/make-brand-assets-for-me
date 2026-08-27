@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
+import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from brand_type import FONT_PATH, load_brand_font
 
 
 ROOT = Path(__file__).parents[1]
@@ -10,7 +18,7 @@ PALETTE = {"ink": "#171526", "blue": "#3157F6", "pink": "#F45B92", "lavender": "
 
 
 def font(size, bold=False):
-    return ImageFont.load_default(size=size)
+    return load_brand_font(size, weight=700 if bold else 500, width=82 if bold else 96)
 
 
 def draw_mark(image, box):
