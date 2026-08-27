@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "facts": [
+    {
+      "id": "fact-open-source",
+      "text": "Make Brand Assets For Me is free, public, and MIT licensed.",
+      "source_url": "https://github.com/Lemonbrand/make-brand-assets-for-me"
+    },
+    {
+      "id": "fact-six-skills",
+      "text": "Version 0.2.0 contains six plain-language skills, including Make My Launch Pack.",
+      "source_url": "https://github.com/Lemonbrand/make-brand-assets-for-me/releases/tag/v0.2.0"
+    },
+    {
+      "id": "fact-self-proof",
+      "text": "The launch-pack renderer in this repository generated the coordinated graphics used for this worked launch example.",
+      "source_url": "https://github.com/Lemonbrand/make-brand-assets-for-me/tree/main/examples/launch-pack/lemonbrand"
+    },
+    {
+      "id": "fact-fictional-examples",
+      "text": "The cut-paper, soft-clay, and bold-print gallery brands are fictional demonstrations.",
+      "source_url": "https://github.com/Lemonbrand/make-brand-assets-for-me/tree/main/examples"
+    },
+    {
+      "id": "fact-free-audit",
+      "text": "Lemonbrand offers a free 60-minute inbox audit through its public booking page.",
+      "source_url": "https://lemonbrand.io/inbox-audit"
+    }
+  ]
+}

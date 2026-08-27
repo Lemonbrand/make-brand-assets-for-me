@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "product-hunt-thumbnail",
+  "placement_id": "product-hunt-thumbnail",
+  "output_path": "assets/product-hunt-thumbnail.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "74d55674c862296b9f89666f6c4fcb27fc069b3550637db76f1d8f7acaad7862"
+}

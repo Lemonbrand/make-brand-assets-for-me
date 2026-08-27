@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "cover-wide",
+  "placement_id": "cover-wide",
+  "output_path": "assets/cover-wide.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "1c77909dcb83a78b6e8714ab6dc93ca64050e96f69d0b8fe336787dadf493aff"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "make-brand-assets-for-me-v020",
+  "brand_id": "lemonbrand-open-source",
+  "title": "Make Brand Assets For Me",
+  "launch_subject": "A free open-source plugin that turns approved brand examples into coordinated assets and launch packs.",
+  "canonical_url": "https://github.com/Lemonbrand/make-brand-assets-for-me",
+  "service_cta": {
+    "label": "Get the free inbox audit",
+    "action": "Book a free 60-minute inbox audit",
+    "url": "https://lemonbrand.io/inbox-audit"
+  },
+  "utm": {
+    "source": "launch-pack",
+    "medium": "campaign",
+    "campaign": "make_brand_assets_for_me"
+  },
+  "palette": {
+    "paper": "#F8FAFB",
+    "paper_2": "#E8ECEE",
+    "ink": "#2B2F30",
+    "navy": "#2B4657",
+    "orange": "#E67E22",
+    "orange_deep": "#C45718",
+    "orange_wash": "#FBEBDD",
+    "green": "#2FA968",
+    "white": "#FFFFFF"
+  },
+  "headlines": {
+    "main": "MAKE BRAND ASSETS FOR ME",
+    "sub": "Show it your brand. Tell it what you need.",
+    "proof": "IT MADE THESE TOO.",
+    "offer": "FREE. OPEN SOURCE. SIX TINY SKILLS.",
+    "audit": "REAL BOTTLENECK IN YOUR INBOX?"
+  },
+  "carousel_linkedin": [
+    {"kicker": "A SMALL FREE TOOL", "headline": "MAKE BRAND ASSETS FOR ME", "body": "Show it your brand. Tell it what you need."},
+    {"kicker": "THE PROBLEM", "headline": "YOUR BRAND SHOULD NOT START OVER EVERY TIME", "body": "Approved examples become a small recipe the next asset can follow."},
+    {"kicker": "THE WHOLE METHOD", "headline": "SHOW. PLAN. MAKE. CHECK. SAVE.", "body": "Five clear steps. No mystery hand-waving."},
+    {"kicker": "THE NEW SKILL", "headline": "MAKE MY LAUNCH PACK", "body": "One idea becomes profiles, banners, posts, stories, carousels, web graphics, email headers and video covers."},
+    {"kicker": "THE PROOF", "headline": "IT MADE THIS LAUNCH PACK", "body": "Free on GitHub. Built by Lemonbrand. Fictional gallery examples are clearly labeled."}
+  ],
+  "carousel_social": [
+    {"kicker": "FREE TOOL", "headline": "MAKE BRAND ASSETS FOR ME"},
+    {"kicker": "1", "headline": "SHOW IT YOUR BRAND"},
+    {"kicker": "2", "headline": "PLAN ONE CLEAR JOB"},
+    {"kicker": "3", "headline": "MAKE THE SMALLEST USEFUL THING"},
+    {"kicker": "4", "headline": "CHECK IT AGAINST REAL EXAMPLES"},
+    {"kicker": "5", "headline": "SAVE THE FILE AND RECEIPT"},
+    {"kicker": "NEW", "headline": "MAKE A WHOLE LAUNCH PACK"},
+    {"kicker": "INCLUDED", "headline": "COPY. ALT TEXT. LINKS. MANIFEST."},
+    {"kicker": "THE PROOF", "headline": "IT MADE THESE GRAPHICS TOO"},
+    {"kicker": "GET IT", "headline": "FREE ON GITHUB"}
+  ]
+}

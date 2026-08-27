@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "linkedin-profile-cover",
+  "placement_id": "linkedin-profile-cover",
+  "output_path": "assets/linkedin-profile-cover.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "9a0a552ecba62dacbe0d303ebbcb93f50075aa840abb6374207e68c3a86ed909"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "open-graph",
+  "placement_id": "open-graph",
+  "output_path": "assets/open-graph.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "76e90e9eac78b8a7042e350548897b622db3de5d54e95a30ae40cfc8cc3d1941"
+}

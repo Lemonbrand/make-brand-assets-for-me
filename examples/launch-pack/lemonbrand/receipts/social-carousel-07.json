@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "social-carousel-07",
+  "placement_id": "carousel-square",
+  "output_path": "carousels/social/page-07.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "9e40aa038e809a808fc199f8bef35f6de834f801fa2d22eeffc667c3a5a57d34"
+}

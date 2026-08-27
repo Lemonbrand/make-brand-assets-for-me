@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "email-header",
+  "placement_id": "email-header",
+  "output_path": "assets/email-header.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "a0fba470b78eaa4ddc56930329e4362eeed4531b4e05ca3adbb825084f34e158"
+}

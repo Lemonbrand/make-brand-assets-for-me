@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "profile-avatar",
+  "placement_id": "profile-avatar",
+  "output_path": "assets/profile-avatar.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "92a4da05a6a3b594413394790eb7438d334072e91e4385cae86a94f4b94e952c"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "posts": [
+    {
+      "channel": "linkedin",
+      "headline": "I built a tiny free tool that makes brand assets.",
+      "body": "I wanted a simple way to make brand assets without teaching an AI the visual language from scratch every time.\n\nSo I built Make Brand Assets For Me. It is a free, MIT-licensed plugin with six plain-language skills. Show it approved examples. Give one asset a clear job. It plans, makes, checks and saves the result.\n\nThe slightly ridiculous proof: the new Make My Launch Pack skill generated the coordinated graphics for this launch.\n\nThe cut-paper, soft-clay and bold-print gallery brands are fictional examples. Bring your own real brand examples when you use it.\n\nGet the plugin free on GitHub.\n\nIf the real bottleneck in your business lives in the inbox, I also offer a free 60-minute inbox audit.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=linkedin&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=linkedin&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "Five-page Lemonbrand carousel introducing the free Make Brand Assets For Me plugin and the five-step method.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-fictional-examples", "fact-free-audit"]
+    },
+    {
+      "channel": "instagram",
+      "headline": "Make brand assets without starting from zero.",
+      "body": "Show it approved brand examples. Tell it what the asset must do. Get the files, checks and receipts.\n\nMake Brand Assets For Me is free and open source. The new launch-pack skill made these graphics too.\n\nThe gallery brands are fictional demos. Your assets use your own brand.\n\nFree on GitHub. Free 60-minute inbox audit from Lemonbrand if operations are the bigger bottleneck.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=instagram&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=instagram&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "Ten square cards explain how the free brand asset plugin shows, plans, makes, checks and saves a coordinated launch pack.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-fictional-examples", "fact-free-audit"]
+    },
+    {
+      "channel": "facebook",
+      "headline": "I made a free brand asset plugin.",
+      "body": "Make Brand Assets For Me turns your approved examples into a small brand recipe, then helps an AI make and check new assets against it. Version 0.2.0 adds a complete launch-pack skill.\n\nThese campaign graphics are the worked example. The gallery brands are fictional. The method is yours to use with your own brand.\n\nDownload it free on GitHub. If your real operations problem is an overloaded inbox, book a free 60-minute Lemonbrand inbox audit.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=facebook&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=facebook&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "Lemonbrand launch graphic for the free Make Brand Assets For Me plugin.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-fictional-examples", "fact-free-audit"]
+    },
+    {
+      "channel": "x",
+      "headline": "Make Brand Assets For Me is free.",
+      "body": "Six tiny skills turn approved examples into matching assets, scenes, sets, motion and full launch packs. The launch-pack skill made these graphics too. Free and MIT licensed on GitHub.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=x&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=x&utm_medium=social&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "Wide launch graphic reading Make Brand Assets For Me, free and open source.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-free-audit"]
+    },
+    {
+      "channel": "youtube",
+      "headline": "Make Brand Assets For Me: a free AI brand asset plugin",
+      "body": "A simple walkthrough of the six skills, the five-step method, and the self-made launch pack. The included gallery brands are fictional examples. Install the free MIT-licensed package from GitHub.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=youtube&utm_medium=video&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=youtube&utm_medium=video&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "YouTube thumbnail with bold text Make Brand Assets For Me and a preview of the launch-pack graphics.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-fictional-examples", "fact-free-audit"]
+    },
+    {
+      "channel": "product-hunt",
+      "headline": "Make Brand Assets For Me",
+      "body": "A free, plain-language skill pack that turns approved brand examples into matching assets, scenes, sets, motion and complete launch packs.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=product_hunt&utm_medium=launch&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=product_hunt&utm_medium=launch&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "Product Hunt gallery showing the free plugin, five-step method and coordinated launch outputs.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-free-audit"]
+    },
+    {
+      "channel": "email",
+      "headline": "I made a free tool for making brand assets",
+      "body": "Make Brand Assets For Me is a free plugin with six clear skills. It learns from approved examples, helps plan one useful asset or a whole launch pack, checks the result and saves the receipt.\n\nThe launch-pack skill generated the graphics for its own launch.\n\nGet it free on GitHub. If the real bottleneck is your inbox, book a free 60-minute inbox audit with Lemonbrand.",
+      "url": "https://github.com/Lemonbrand/make-brand-assets-for-me?utm_source=email&utm_medium=newsletter&utm_campaign=make_brand_assets_for_me",
+      "service_url": "https://lemonbrand.io/inbox-audit?utm_source=email&utm_medium=newsletter&utm_campaign=make_brand_assets_for_me",
+      "alt_text": "Email header for the free Make Brand Assets For Me plugin.",
+      "claim_ids": ["fact-open-source", "fact-six-skills", "fact-self-proof", "fact-free-audit"]
+    }
+  ]
+}

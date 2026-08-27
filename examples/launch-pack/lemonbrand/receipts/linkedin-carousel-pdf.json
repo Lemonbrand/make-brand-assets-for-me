@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "linkedin-carousel-pdf",
+  "placement_id": "carousel-pdf",
+  "output_path": "carousels/linkedin/make-brand-assets-for-me.pdf",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "38ec045cd6fa27aaad6558e47ae7df34cf17103ef93066f4bc660785e5e8c88f"
+}

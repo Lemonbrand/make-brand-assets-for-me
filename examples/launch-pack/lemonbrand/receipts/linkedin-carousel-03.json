@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "linkedin-carousel-03",
+  "placement_id": "carousel-pdf",
+  "output_path": "carousels/linkedin/page-03.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "f064388e72102c85fbda16549ad04b5243545d72eb6beea72b8f57f41f450d28"
+}

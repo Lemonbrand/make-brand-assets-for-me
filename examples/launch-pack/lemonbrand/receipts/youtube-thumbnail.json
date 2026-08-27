@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "youtube-thumbnail",
+  "placement_id": "youtube-thumbnail",
+  "output_path": "assets/youtube-thumbnail.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "402545af9eee22264bce8d9bf21e4de7e16f24cdf195b08dc0891503030dfd4f"
+}

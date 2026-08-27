@@ -34,6 +34,12 @@ def check_package(root):
         "plugins/make-brand-assets-for-me/assets/logo-light.png",
         "plugins/make-brand-assets-for-me/assets/logo-dark.png",
         "plugins/make-brand-assets-for-me/assets/social-preview.png",
+        "examples/launch-pack/lemonbrand/source-facts.json",
+        "examples/launch-pack/lemonbrand/campaign.json",
+        "examples/launch-pack/lemonbrand/copy.json",
+        "examples/launch-pack/lemonbrand/campaign-manifest.json",
+        "examples/launch-pack/lemonbrand/proofs/contact-sheet.png",
+        "examples/launch-pack/lemonbrand/carousels/linkedin/make-brand-assets-for-me.pdf",
     ]
     for relative in required:
         if not (root / relative).exists():
@@ -58,6 +64,10 @@ def check_package(root):
         "asset receipts": (root / "examples/records", "*.json", 10),
         "proof sheets": (root / "examples/gallery/proofs", "*.png", 4),
         "plugin screenshots": (root / "plugins/make-brand-assets-for-me/assets", "screenshot-*.png", 3),
+        "launch-pack primary PNGs": (root / "examples/launch-pack/lemonbrand/assets", "*.png", 14),
+        "LinkedIn carousel pages": (root / "examples/launch-pack/lemonbrand/carousels/linkedin", "page-*.png", 5),
+        "social carousel pages": (root / "examples/launch-pack/lemonbrand/carousels/social", "page-*.png", 10),
+        "launch-pack receipts": (root / "examples/launch-pack/lemonbrand/receipts", "*.json", 30),
     }
     for label, (folder, pattern, expected) in counts.items():
         actual = len(list(folder.glob(pattern))) if folder.exists() else 0
@@ -107,7 +117,7 @@ def main():
         for error in errors:
             print(f"FAIL: {error}")
         raise SystemExit(1)
-    print("PASS: the public package has six synchronized skills, two plugin adapters, ten baselines, four proofs, three screenshots, and its required files.")
+    print("PASS: the public package has six synchronized skills, two plugin adapters, ten baselines, a complete launch proof, and its required files.")
 
 
 if __name__ == "__main__":

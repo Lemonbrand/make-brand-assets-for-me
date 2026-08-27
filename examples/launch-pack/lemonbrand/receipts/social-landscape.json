@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "social-landscape",
+  "placement_id": "social-landscape",
+  "output_path": "assets/social-landscape.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "75a9f9b9fa3c04eb72df650da49bc0f5cc2108510546323781c5acd021b97d4c"
+}

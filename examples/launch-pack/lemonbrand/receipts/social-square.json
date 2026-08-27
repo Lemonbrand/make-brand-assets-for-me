@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "social-square",
+  "placement_id": "social-square",
+  "output_path": "assets/social-square.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "34dd41017f2a71d4a4d6b64ba00162e8f8e841931c3aa5f90b3767104e8226f7"
+}

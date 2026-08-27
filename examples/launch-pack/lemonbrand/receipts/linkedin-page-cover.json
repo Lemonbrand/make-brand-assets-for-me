@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "linkedin-page-cover",
+  "placement_id": "linkedin-page-cover",
+  "output_path": "assets/linkedin-page-cover.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "3e9e8e76117011c043af19d440aa9c77b2ade0d656da57bf05b1da0b9d3380e0"
+}

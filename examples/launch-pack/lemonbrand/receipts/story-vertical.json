@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "story-vertical",
+  "placement_id": "story-vertical",
+  "output_path": "assets/story-vertical.png",
+  "font": "Pillow bundled default",
+  "source_files": [
+    "campaign.json",
+    "source-facts.json"
+  ],
+  "checks": {
+    "dimensions": "pass",
+    "brand_system": "pass",
+    "publication": "not_attempted"
+  },
+  "sha256": "847b193946deb376127b9da1a132cc06758fa73d5ecdece88dd1ac96d3464fb4"
+}
