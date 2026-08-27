@@ -6,7 +6,7 @@ Make Brand Assets For Me
 
 ## Description
 
-Show Claude approved brand examples, turn them into a simple visual recipe, and make matching assets, scenes, sets, or subtle motion. Every workflow uses SHOW → PLAN → MAKE → CHECK → SAVE and asks only the questions that change the result.
+Show Claude approved brand examples, turn them into a simple visual recipe, and make matching assets, scenes, sets, subtle motion, or complete launch packs. Every workflow uses SHOW → PLAN → MAKE → CHECK → SAVE and asks only the questions that change the result.
 
 ## Install
 

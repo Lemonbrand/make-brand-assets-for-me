@@ -31,6 +31,7 @@ SHOW → PLAN → MAKE → CHECK → SAVE
 - **Make A Brand Scene** makes one picture with several parts and room for copy.
 - **Make A Brand Asset Set** turns a method or framework into separate matching files.
 - **Make A Brand Asset Move** adds small motion to approved artwork.
+- **Make My Launch Pack** turns one approved idea into the profiles, banners, posts, stories, carousels, web graphics, email headers, video covers, copy, alt text, tracked links, and receipts needed for a launch.
 
 ## Install it
 
@@ -73,6 +74,10 @@ Review the brand recipe. Then say:
 
 > Make one transparent brand asset that means human approval.
 
+Or make a whole campaign:
+
+> Make my launch pack for this offer. Use this page and this one call to action.
+
 The skills use the host's built-in ask-user function when a choice changes the result. If that function is unavailable, they ask one short question in normal chat.
 
 ## See the proof
@@ -81,6 +86,8 @@ The skills use the host's built-in ask-user function when a choice changes the r
 - [Three scenes](examples/gallery/proofs/02-three-scenes.png)
 - [One matching set](examples/gallery/proofs/03-one-matching-set.png)
 - [All ten baselines](examples/gallery/proofs/04-all-baselines.png)
+- [Complete worked launch pack](examples/launch-pack/lemonbrand/README.md)
+- [Launch-pack contact sheet](examples/launch-pack/lemonbrand/proofs/contact-sheet.png)
 - [Test results](docs/test-results.md)
 
 ## Check the package
@@ -94,7 +101,7 @@ python3 scripts/check_package.py
 python3 scripts/check_for_private_stuff.py
 ```
 
-The package includes ten baseline PNGs, their briefs and receipts, four proof sheets, three screenshots, and reproducible release tooling.
+The package includes ten baseline PNGs, their briefs and receipts, a complete 30-file launch manifest, channel copy, proof sheets, screenshots, and reproducible release tooling.
 
 ## What is not inside
 
@@ -113,4 +120,4 @@ Use it, fork it, and adapt it under the [MIT License](LICENSE.md). Contributions
 
 Lemonbrand is an AI operations partner. If your team's real bottleneck lives around the inbox, book a [free 60-minute Inbox Audit](https://lemonbrand.io/inbox-audit?utm_source=github&utm_medium=referral&utm_campaign=make_brand_assets_for_me). You will leave with one clear place to begin.
 
-Version: `0.1.0`
+Version: `0.2.0`

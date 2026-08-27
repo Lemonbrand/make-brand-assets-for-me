@@ -9,7 +9,7 @@ PLUGIN = ROOT / "plugins" / "make-brand-assets-for-me"
 def test_plugin_and_skills_exist():
     manifest = json.loads((PLUGIN / ".codex-plugin/plugin.json").read_text())
     assert manifest["name"] == "make-brand-assets-for-me"
-    assert manifest["version"] == "0.1.0"
+    assert manifest["version"] == "0.2.0"
 
     expected = {
         "brand-assets-set-up",

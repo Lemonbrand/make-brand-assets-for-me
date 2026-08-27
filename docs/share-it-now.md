@@ -6,9 +6,11 @@ Send the public repository:
 
 `https://github.com/Lemonbrand/make-brand-assets-for-me`
 
-Or send `release/make-brand-assets-for-me-0.1.0.zip`.
+Or send `release/make-brand-assets-for-me-0.2.0.zip`.
 
 Your friend can unzip it, read `README.md`, and inspect the complete example sheet before installing anything.
+
+The complete multi-channel proof is in `examples/launch-pack/lemonbrand/`. It includes ready-sized PNGs, two carousel formats, a PDF, copy, alt text, source facts, tracked links, receipts, and a machine-checkable manifest.
 
 ## Install from GitHub
 

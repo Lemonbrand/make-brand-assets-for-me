@@ -17,7 +17,7 @@
 /reload-plugins
 ```
 
-Run one request for each of the five skills. Confirm that the plugin does not trigger for the three negative cases in `distribution/openai/test-cases.json`.
+Run one request for each of the six skills. Confirm that the plugin does not trigger for the three negative cases in `distribution/openai/test-cases.json`.
 
 ## Submit
 

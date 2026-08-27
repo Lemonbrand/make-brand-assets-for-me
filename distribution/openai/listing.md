@@ -10,7 +10,7 @@ Show it your brand, tell it what you need, and make visual assets that match.
 
 ## Short description
 
-Turn approved brand examples into simple rules, matching PNG assets, scenes, sets, and subtle motion.
+Turn approved brand examples into simple rules, matching assets, scenes, sets, subtle motion, and complete multi-channel launch packs.
 
 ## Full description
 

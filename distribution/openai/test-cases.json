@@ -2,7 +2,7 @@
   "starter_prompts": [
     "Set up my brand from these approved examples.",
     "Make one transparent brand asset that means human approval.",
-    "Turn this four-step method into a matching asset set."
+    "Make the complete launch pack for this offer and website."
   ],
   "positive": [
     {
@@ -29,6 +29,11 @@
       "prompt": "Animate this approved approval stamp with a small loop, without redrawing it.",
       "expected_skill": "brand-assets-make-move",
       "expected_behavior": "Use the approved pixels, choose a restrained motion, check key frames and the loop seam, and save the motion record."
+    },
+    {
+      "prompt": "Make the profile pictures, banners, carousel, story and launch images for every channel.",
+      "expected_skill": "brand-assets-make-launch-pack",
+      "expected_behavior": "Use the four launch answers, approve one placement table, render the selected pack, and save copy, alt text, tracked links, receipts, proofs, and a public campaign manifest."
     }
   ],
   "negative": [

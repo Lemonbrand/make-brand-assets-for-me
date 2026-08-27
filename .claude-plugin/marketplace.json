@@ -6,14 +6,14 @@
     "url": "https://lemonbrand.io"
   },
   "description": "Simple, reusable AI workflows from Lemonbrand.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "plugins": [
     {
       "name": "make-brand-assets-for-me",
       "displayName": "Make Brand Assets For Me",
       "source": "./plugins/make-brand-assets-for-me",
-      "description": "Turn your own brand examples into matching assets, scenes, sets, and simple motion.",
-      "version": "0.1.0",
+      "description": "Turn your own brand examples into matching assets, scenes, sets, motion, and complete launch packs.",
+      "version": "0.2.0",
       "author": {
         "name": "Lemonbrand",
         "email": "hello@lemonbrand.io",

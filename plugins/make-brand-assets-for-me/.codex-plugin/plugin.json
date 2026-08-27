@@ -1,7 +1,7 @@
 {
   "name": "make-brand-assets-for-me",
-  "version": "0.1.0",
-  "description": "Turn your own brand examples into clear rules, matching PNG assets, scenes, sets, and simple motion.",
+  "version": "0.2.0",
+  "description": "Turn your own brand examples into clear rules, matching assets, scenes, sets, motion, and complete launch packs.",
   "author": {
     "name": "Lemonbrand",
     "email": "hello@lemonbrand.io",
@@ -29,7 +29,7 @@
     "defaultPrompt": [
       "Set up my brand from these examples.",
       "Make one brand asset for human approval.",
-      "Turn this four-step method into an asset set."
+      "Make the complete launch pack for this offer."
     ]
   }
 }

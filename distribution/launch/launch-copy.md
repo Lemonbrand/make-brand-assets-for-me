@@ -14,7 +14,7 @@ SHOW → PLAN → MAKE → CHECK → SAVE
 
 You give it approved brand examples. It turns them into a plain recipe, asks only the questions that change the result, makes the asset, checks it against the references, and saves a receipt.
 
-It works with Codex, Claude Code, and skills.sh-compatible hosts. The repo includes five skills, ten fictional baseline PNGs, tests, screenshots, and a downloadable release.
+It works with Codex, Claude Code, and skills.sh-compatible hosts. The repo includes six skills, ten fictional style baselines, a complete 30-file launch manifest, tests, screenshots, and a downloadable release.
 
 Free. MIT licensed. Fork it.
 

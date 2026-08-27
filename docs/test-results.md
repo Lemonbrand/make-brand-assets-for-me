@@ -1,11 +1,11 @@
 # Did It Work?
 
-Yes. Version `0.1.0` passed the package checks on August 26, 2026.
+Yes. Version `0.2.0` passed the package checks on August 27, 2026.
 
 ## The short answer
 
-- 24 automated tests passed.
-- All 5 skills passed the Codex skill validator.
+- 56 automated tests passed.
+- All 6 skills passed the repository structure and synchronization gates.
 - The plugin passed the Codex plugin validator.
 - The clean-room scan found no private links, private source names, local home paths, likely secrets, or unfinished notes.
 - The ZIP contains the README, plugin, skills, examples, checks, and docs.
@@ -21,7 +21,16 @@ The included baseline has:
 - 10 prompts, 10 briefs, and 10 asset receipts;
 - 4 proof sheets and 3 plugin screenshots.
 
-See `examples/gallery/proofs/04-all-baselines.png` for the complete sheet.
+The launch-pack baseline adds:
+
+- 14 primary channel PNGs;
+- a 5-page LinkedIn carousel and PDF;
+- a 10-page social carousel;
+- 30 asset receipts and one validated public campaign manifest;
+- source-linked copy for LinkedIn, Instagram, Facebook, X, YouTube, Product Hunt, and email;
+- identical asset digests across two consecutive builds.
+
+See `examples/gallery/proofs/04-all-baselines.png` for the original style sheet and `examples/launch-pack/lemonbrand/proofs/contact-sheet.png` for the complete launch family.
 
 ## What still needs a human
 

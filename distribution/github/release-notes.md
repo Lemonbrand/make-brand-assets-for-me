@@ -1,16 +1,18 @@
-# Make Brand Assets For Me v0.1.0
+# Make Brand Assets For Me v0.2.0
 
 Show an AI your brand. Tell it what you need. Make assets that match.
 
-This first public release includes:
+This release includes:
 
-- five guided brand-asset skills;
+- six guided brand-asset skills, including **Make My Launch Pack**;
 - Codex and ChatGPT desktop marketplace packaging;
 - Claude Code marketplace packaging;
 - top-level Agent Skills folders for skills.sh and compatible hosts;
 - ten fictional baseline PNGs in three visual styles;
 - briefs, prompts, asset receipts, proof sheets, and screenshots;
 - tests and reproducible release tooling;
+- a checked campaign manifest contract that keeps public asset intent separate from provider publication state;
+- a complete worked Lemonbrand launch pack with 29 PNGs, a five-page PDF, copy for seven channels, tracked links, 30 receipts, and a contact sheet;
 - an MIT license.
 
 ## Install
@@ -19,7 +21,7 @@ See the repository README for Codex, Claude Code, and skills.sh commands.
 
 ## Download
 
-Download `make-brand-assets-for-me-0.1.0.zip` below. The SHA-256 digest is stored in `release/manifest.json`.
+Download `make-brand-assets-for-me-0.2.0.zip` below. The SHA-256 digest is stored in `release/manifest.json`.
 
 ## Built by Lemonbrand
 
