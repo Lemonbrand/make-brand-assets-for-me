@@ -32,6 +32,23 @@ def test_package_checker_accepts_the_repo():
     assert checker.check_package(ROOT) == []
 
 
+def test_package_checker_rejects_pip_cache_without_dependency_path(tmp_path):
+    checker = load_script("check_package")
+    workflow = tmp_path / ".github/workflows/test.yml"
+    workflow.parent.mkdir(parents=True)
+    workflow.write_text(
+        "uses: actions/setup-python@v5\n"
+        "with:\n"
+        "  python-version: '3.12'\n"
+        "  cache: pip\n"
+    )
+    (tmp_path / "requirements-dev.txt").write_text("pytest>=8,<10\n")
+
+    errors = checker.check_package(tmp_path)
+
+    assert "GitHub Actions pip cache must declare cache-dependency-path" in errors
+
+
 def test_release_zip_is_clean_and_complete():
     subprocess.run([sys.executable, str(ROOT / "scripts/build_release.py")], cwd=ROOT, check=True, capture_output=True, text=True)
     archive = ROOT / "release/make-brand-assets-for-me-0.1.0.zip"

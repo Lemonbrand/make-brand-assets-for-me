@@ -88,6 +88,12 @@ def check_package(root):
                 errors.append("Claude plugin license must be MIT")
         except (OSError, json.JSONDecodeError) as error:
             errors.append(f"Bad Claude plugin manifest: {error}")
+
+    workflow_path = root / ".github/workflows/test.yml"
+    if workflow_path.exists():
+        workflow = workflow_path.read_text()
+        if "cache: pip" in workflow and "cache-dependency-path:" not in workflow:
+            errors.append("GitHub Actions pip cache must declare cache-dependency-path")
     return errors
 
 
