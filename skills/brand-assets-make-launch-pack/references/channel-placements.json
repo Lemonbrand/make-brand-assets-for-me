@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-27",
+  "safe_area_note": "Safe-area margins are conservative package defaults unless an official crop is stated in source_note.",
+  "placements": [
+    {
+      "id": "profile-avatar",
+      "width": 400,
+      "height": 400,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 40, "right": 40, "bottom": 40, "left": 40, "shape": "circle"},
+      "page_limit": 1,
+      "source_url": "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+      "source_note": "X officially recommends 400 x 400. The circular inset is a package default.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "cover-wide",
+      "width": 1500,
+      "height": 500,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 60, "right": 90, "bottom": 60, "left": 90, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+      "source_note": "X officially recommends 1500 x 500 and warns that 60 px can crop from top and bottom.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "linkedin-profile-cover",
+      "width": 1584,
+      "height": 396,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 48, "right": 80, "bottom": 48, "left": 360, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://nonprofit.linkedin.com/blog/2022/04/one-way-to-improve-your-linkedin-profile-as-a-nonprofit-pro",
+      "source_note": "LinkedIn gives 1584 x 396. The left inset protects content from the profile-photo overlap.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "linkedin-page-cover",
+      "width": 4200,
+      "height": 700,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 90, "right": 210, "bottom": 90, "left": 600, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://www.linkedin.com/help/linkedin/answer/a563310/image-specifications-for-your-linkedin-pages-and-career-pages?lang=en",
+      "source_note": "LinkedIn officially recommends 4200 x 700 for Page cover images. Insets are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "social-square",
+      "width": 1080,
+      "height": 1080,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 80, "right": 80, "bottom": 80, "left": 80, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+      "source_note": "1:1 feed master. Pixel dimensions and insets are package defaults for portable output.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "social-portrait",
+      "width": 1080,
+      "height": 1350,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 90, "right": 80, "bottom": 120, "left": 80, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+      "source_note": "4:5 feed master. Pixel dimensions and insets are package defaults for portable output.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "social-landscape",
+      "width": 1200,
+      "height": 627,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 54, "right": 72, "bottom": 54, "left": 72, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://www.linkedin.com/help/linkedin/answer/a563310/image-specifications-for-your-linkedin-pages-and-career-pages?lang=en",
+      "source_note": "LinkedIn specifies 1.91:1 and 1200 x 627 for custom link images. Insets are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "story-vertical",
+      "width": 1080,
+      "height": 1920,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 250, "right": 90, "bottom": 310, "left": 90, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://www.facebook.com/business/ads/facebook-instagram-reels-ads",
+      "source_note": "Meta specifies 9:16 and keeping key creative in the safe zone. Pixel dimensions and insets are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "open-graph",
+      "width": 1200,
+      "height": 630,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 60, "right": 72, "bottom": 60, "left": 72, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://developers.facebook.com/docs/sharing/webmasters/images/",
+      "source_note": "1.91:1 sharing-image master. Pixel dimensions and insets are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "carousel-square",
+      "width": 1080,
+      "height": 1080,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 80, "right": 80, "bottom": 100, "left": 80, "shape": "rectangle"},
+      "page_limit": 10,
+      "source_url": "https://www.facebook.com/business/ads-guide/update/carousel",
+      "source_note": "1:1 carousel master with a ten-page package limit. Pixel dimensions and insets are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "carousel-pdf",
+      "width": 1080,
+      "height": 1350,
+      "formats": ["pdf", "png"],
+      "safe_area": {"top": 90, "right": 80, "bottom": 110, "left": 80, "shape": "rectangle"},
+      "page_limit": 300,
+      "source_url": "https://www.linkedin.com/help/linkedin/answer/a518909/upload-and-share-documents-on-linkedin?lang=en",
+      "source_note": "LinkedIn accepts PDF documents up to 300 equal-sized pages. The 4:5 canvas and insets are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "email-header",
+      "width": 1200,
+      "height": 600,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 60, "right": 80, "bottom": 60, "left": 80, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://www.caniemail.com/features/html-width/",
+      "source_note": "Portable 2x image for a 600 px email content column. This is a package default, not a platform maximum.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "product-hunt-thumbnail",
+      "width": 240,
+      "height": 240,
+      "formats": ["png", "jpg", "gif"],
+      "safe_area": {"top": 24, "right": 24, "bottom": 24, "left": 24, "shape": "circle"},
+      "page_limit": 1,
+      "source_url": "https://help.producthunt.com/en/articles/479557-how-to-post-a-product",
+      "source_note": "Product Hunt recommends a 240 x 240 square thumbnail. The circular inset is a package default.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "product-hunt-gallery",
+      "width": 1270,
+      "height": 760,
+      "formats": ["png", "jpg", "gif"],
+      "safe_area": {"top": 64, "right": 76, "bottom": 64, "left": 76, "shape": "rectangle"},
+      "page_limit": 12,
+      "source_url": "https://help.producthunt.com/en/articles/479557-how-to-post-a-product",
+      "source_note": "Product Hunt recommends 1270 x 760 and requires at least two images for a visible gallery. Insets and package limit are package defaults.",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "youtube-thumbnail",
+      "width": 3840,
+      "height": 2160,
+      "formats": ["png", "jpg"],
+      "safe_area": {"top": 150, "right": 230, "bottom": 220, "left": 230, "shape": "rectangle"},
+      "page_limit": 1,
+      "source_url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "source_note": "YouTube recommends 3840 x 2160 and 16:9 for video thumbnails. Insets are package defaults.",
+      "verified_on": "2026-08-27"
+    }
+  ]
+}

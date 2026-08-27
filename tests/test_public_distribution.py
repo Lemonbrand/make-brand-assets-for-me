@@ -14,7 +14,9 @@ EXPECTED_SKILLS = {
     "brand-assets-make-scene",
     "brand-assets-make-set",
     "brand-assets-make-move",
+    "brand-assets-make-launch-pack",
 }
+SUBMISSION_SKILLS = EXPECTED_SKILLS - {"brand-assets-make-launch-pack"}
 REPOSITORY = "https://github.com/Lemonbrand/make-brand-assets-for-me"
 GITHUB_OFFER = (
     "https://lemonbrand.io/inbox-audit?utm_source=github"
@@ -79,7 +81,7 @@ def test_openai_submission_cases_are_complete():
     assert len(data["positive"]) == 5
     assert len(data["negative"]) == 3
     assert len(data["starter_prompts"]) == 3
-    assert {item["expected_skill"] for item in data["positive"]} == EXPECTED_SKILLS
+    assert {item["expected_skill"] for item in data["positive"]} == SUBMISSION_SKILLS
     assert all(item["expected_result"] == "do_not_trigger" for item in data["negative"])
 
 

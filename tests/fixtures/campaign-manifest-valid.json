@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "example-launch",
+  "brand_id": "example-brand",
+  "title": "Example launch",
+  "launch_subject": "A fictional example product",
+  "canonical_url": "https://example.com/launch",
+  "cta": {
+    "label": "See the example",
+    "action": "Visit the launch page"
+  },
+  "utm": {
+    "source": "linkedin",
+    "medium": "social",
+    "campaign": "example_launch"
+  },
+  "source_facts": [
+    {
+      "id": "fact-launch-subject",
+      "text": "This is a fictional example product.",
+      "source_url": "https://example.com/launch"
+    }
+  ],
+  "assets": [
+    {
+      "id": "square-launch",
+      "placement_id": "social-square",
+      "path": "assets/square-launch.png",
+      "width": 1080,
+      "height": 1080,
+      "format": "png",
+      "alt_text": "A fictional example product shown in a square launch graphic.",
+      "sha256": "__TEST_SHA256__",
+      "claim_ids": ["fact-launch-subject"]
+    }
+  ]
+}
