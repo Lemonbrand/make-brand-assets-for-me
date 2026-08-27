@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "generator": "OpenAI ImageGen",
+  "method": "Generate a clean image background from three approved visual anchors, inspect the protected negative space, then add local text in a separate deterministic layout pass.",
+  "shared_style": {
+    "name": "Torn-Paper Signal Collage",
+    "materials": "Fibrous paper, torn edges, tape, contact shadows, imperfect ink, halftone and crosshatching",
+    "colors": ["#C9A34D", "#BB6656", "#2F3E59", "#CFCAC1", "#1D1D20"],
+    "generated_text": "none",
+    "source_anchor_roles": [
+      "approved workflow-composition anchor",
+      "approved negative-space scene anchor",
+      "approved automation-scene anchor"
+    ]
+  },
+  "backgrounds": [
+    {
+      "path": "landscape-16x9.png",
+      "job": "Landscape posts, open graph images, email headers, gallery images and video covers",
+      "focal_cluster": "left 38-42 percent",
+      "protected_negative_space": "right 58-62 percent",
+      "story": "Mismatched visual cards pass through a handmade checking station and emerge as one coordinated family."
+    },
+    {
+      "path": "portrait-4x5.png",
+      "job": "Portrait posts and document carousels",
+      "focal_cluster": "bottom 38-42 percent",
+      "protected_negative_space": "top 58-62 percent",
+      "story": "A tactile brand-asset workbench turns varied cards into a checked family."
+    },
+    {
+      "path": "square-1x1.png",
+      "job": "Square posts, avatars, thumbnails and square carousels",
+      "focal_cluster": "lower right 38-42 percent",
+      "protected_negative_space": "upper left 58-62 percent",
+      "story": "A hand completes a family of three cards beside a magnifier and checking jig."
+    },
+    {
+      "path": "vertical-9x16.png",
+      "job": "Stories and reel covers",
+      "focal_cluster": "bottom 34-38 percent",
+      "protected_negative_space": "top 62-66 percent",
+      "story": "A phone-size paper assembly line checks a messy stack and saves a coherent set."
+    },
+    {
+      "path": "banner-3x1.png",
+      "job": "Wide profile and page covers",
+      "focal_cluster": "right 28-32 percent",
+      "protected_negative_space": "left 64-68 percent",
+      "story": "A compact inspection route turns varied source cards into approved visual assets."
+    }
+  ],
+  "layout_contract": {
+    "overlay_words": "0-14",
+    "overlay_location": "inside the protected negative space",
+    "receipts": ["background_source", "overlay_word_count"],
+    "recompose_rule": "Use a separate master when cropping would damage the focal story or protected field."
+  }
+}

@@ -9,7 +9,7 @@ PLUGIN = ROOT / "plugins" / "make-brand-assets-for-me"
 def test_plugin_and_skills_exist():
     manifest = json.loads((PLUGIN / ".codex-plugin/plugin.json").read_text())
     assert manifest["name"] == "make-brand-assets-for-me"
-    assert manifest["version"] == "0.2.0"
+    assert manifest["version"] == "0.2.1"
 
     expected = {
         "brand-assets-set-up",
@@ -43,6 +43,21 @@ def test_launch_pack_skill_has_complete_entrypoint():
         if path.is_file()
     } if skill.exists() else set()
     assert required <= actual
+
+
+def test_launch_pack_skill_teaches_the_image_first_asset_contract():
+    skill = (
+        PLUGIN / "skills/brand-assets-make-launch-pack/SKILL.md"
+    ).read_text().lower()
+    review = (
+        PLUGIN / "skills/brand-assets-make-launch-pack/references/check-the-launch-pack.md"
+    ).read_text().lower()
+
+    assert "background first" in skill
+    assert "protected negative space" in skill
+    assert "fewer than 15 words" in skill
+    assert "no text" in skill and "generated background" in skill
+    assert "overlay_word_count" in review
 
 
 def test_marketplace_points_to_plugin():

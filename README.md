@@ -120,4 +120,4 @@ Use it, fork it, and adapt it under the [MIT License](LICENSE.md). Contributions
 
 Lemonbrand is an AI operations partner. If your team's real bottleneck lives around the inbox, book a [free 60-minute Inbox Audit](https://lemonbrand.io/inbox-audit?utm_source=github&utm_medium=referral&utm_campaign=make_brand_assets_for_me). You will leave with one clear place to begin.
 
-Version: `0.2.0`
+Version: `0.2.1`

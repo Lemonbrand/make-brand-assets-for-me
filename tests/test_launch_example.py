@@ -2,7 +2,7 @@ import importlib.util
 import json
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageStat
 
 
 ROOT = Path(__file__).parents[1]
@@ -107,21 +107,44 @@ def test_generated_manifest_passes_the_public_checker():
     assert module.check_campaign_manifest(ROOT, CAMPAIGN / "campaign-manifest.json") == []
 
 
-def test_small_product_thumbnail_uses_a_readable_single_mark():
+def test_generated_background_masters_have_real_negative_space():
+    backgrounds = CAMPAIGN / "backgrounds"
+    protected_regions = {
+        "landscape-16x9.png": lambda w, h: (int(w * .55), 0, w, h),
+        "banner-3x1.png": lambda w, h: (0, 0, int(w * .55), h),
+        "square-1x1.png": lambda w, h: (0, 0, int(w * .52), int(h * .52)),
+        "portrait-4x5.png": lambda w, h: (0, 0, w, int(h * .52)),
+        "vertical-9x16.png": lambda w, h: (0, 0, w, int(h * .52)),
+    }
+
+    assert {path.name for path in backgrounds.glob("*.png")} == set(protected_regions)
+    for filename, region in protected_regions.items():
+        with Image.open(backgrounds / filename) as image:
+            assert min(image.size) >= 800
+            quiet = image.convert("RGB").crop(region(*image.size))
+            assert max(ImageStat.Stat(quiet).stddev) < 12, filename
+
+
+def test_every_raster_uses_a_background_and_fewer_than_fifteen_overlay_words():
     load_builder()(ROOT, CAMPAIGN)
-    with Image.open(CAMPAIGN / "assets/product-hunt-thumbnail.png") as image:
-        pixels = list(image.convert("RGB").get_flattened_data())
-    orange_pixels = sum(pixel == (230, 126, 34) for pixel in pixels)
+    manifest = json.loads((CAMPAIGN / "campaign-manifest.json").read_text())
 
-    assert orange_pixels / len(pixels) > 0.35
+    for asset in manifest["assets"]:
+        if asset["format"] != "png":
+            continue
+        receipt = json.loads((CAMPAIGN / "receipts" / f"{asset['id']}.json").read_text())
+        background = CAMPAIGN / receipt["background_source"]
+        assert background.exists(), asset["id"]
+        assert background.parent.name == "backgrounds"
+        assert 0 <= receipt["overlay_word_count"] < 15, asset["id"]
 
 
-def test_carousel_preview_and_body_regions_do_not_overlap():
-    module = load_builder_module()
+def test_finished_pngs_use_a_compact_indexed_palette():
+    load_builder()(ROOT, CAMPAIGN)
 
-    regions = module.carousel_regions(1080, 1350, has_preview=True)
-
-    assert regions["body"][1] + regions["body"][3] <= regions["preview"][1]
+    with Image.open(CAMPAIGN / "assets/social-square.png") as image:
+        assert image.mode == "P"
+        assert len(image.getcolors(maxcolors=256)) <= 256
 
 
 def test_package_gate_requires_the_worked_launch_manifest(tmp_path):

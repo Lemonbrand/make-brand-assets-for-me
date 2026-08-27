@@ -6,12 +6,15 @@
   "font": "Pillow bundled default",
   "source_files": [
     "campaign.json",
-    "source-facts.json"
+    "source-facts.json",
+    "backgrounds/portrait-4x5.png"
   ],
+  "background_source": "backgrounds/portrait-4x5.png",
+  "overlay_word_count": 0,
   "checks": {
     "dimensions": "pass",
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "38ec045cd6fa27aaad6558e47ae7df34cf17103ef93066f4bc660785e5e8c88f"
+  "sha256": "be48666a41ea975bf1e4ea75ba9056d7160bdfc87a8adfd2e6bc96870f15614d"
 }

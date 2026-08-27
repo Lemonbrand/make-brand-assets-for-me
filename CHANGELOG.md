@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1 - 2026-08-27
+
+- Rebuilt every worked launch graphic from generated Lemonbrand editorial backgrounds with protected negative space.
+- Added five reusable background masters for landscape, portrait, square, vertical, and wide-banner families.
+- Limited each finished raster overlay to 0-14 words and recorded the count with its background source.
+- Added machine-checked negative-space, background-source, and overlay-word gates.
+- Updated the launch-pack skill so future packs generate the clean image first and add copy afterwards.
+
 ## 0.2.0 - 2026-08-27
 
 - Added **Make My Launch Pack**, the sixth plain-language skill.

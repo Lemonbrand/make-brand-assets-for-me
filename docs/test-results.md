@@ -1,10 +1,10 @@
 # Did It Work?
 
-Yes. Version `0.2.0` passed the package checks on August 27, 2026.
+Yes. Version `0.2.1` passed the package checks on August 27, 2026.
 
 ## The short answer
 
-- 56 automated tests passed.
+- 58 automated tests passed.
 - All 6 skills passed the repository structure and synchronization gates.
 - The plugin passed the Codex plugin validator.
 - The clean-room scan found no private links, private source names, local home paths, likely secrets, or unfinished notes.
@@ -23,11 +23,13 @@ The included baseline has:
 
 The launch-pack baseline adds:
 
+- 5 clean generated editorial background masters;
 - 14 primary channel PNGs;
 - a 5-page LinkedIn carousel and PDF;
 - a 10-page social carousel;
 - 30 asset receipts and one validated public campaign manifest;
 - source-linked copy for LinkedIn, Instagram, Facebook, X, YouTube, Product Hunt, and email;
+- measured protected negative space, a named background source, and a 0-14 word overlay gate for every raster;
 - identical asset digests across two consecutive builds.
 
 See `examples/gallery/proofs/04-all-baselines.png` for the original style sheet and `examples/launch-pack/lemonbrand/proofs/contact-sheet.png` for the complete launch family.
@@ -36,4 +38,4 @@ See `examples/gallery/proofs/04-all-baselines.png` for the original style sheet 
 
 An image can pass its file checks and still be the wrong idea. A human should approve meaning, brand fit, and any edge-padding warning before publishing it.
 
-The conservative copy-space check marked all three textured scene backgrounds for review. The objects are visibly kept to the left, but paper and clay texture creates changed pixels in the protected area. The red overlays are saved in `examples/gallery/copy-checks/` so a reviewer can decide at the real page size.
+The original three-style gallery keeps conservative copy-space review overlays in `examples/gallery/copy-checks/`. The launch-pack masters use a separate measured quiet-zone gate and passed it.

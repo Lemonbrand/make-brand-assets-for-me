@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "campaign_id": "make-brand-assets-for-me-v020",
+  "campaign_id": "make-brand-assets-for-me-v021",
   "brand_id": "lemonbrand-open-source",
   "title": "Make Brand Assets For Me",
   "launch_subject": "A free open-source plugin that turns approved brand examples into coordinated assets and launch packs.",
@@ -16,15 +16,15 @@
     "campaign": "make_brand_assets_for_me"
   },
   "palette": {
-    "paper": "#F8FAFB",
-    "paper_2": "#E8ECEE",
-    "ink": "#2B2F30",
-    "navy": "#2B4657",
-    "orange": "#E67E22",
-    "orange_deep": "#C45718",
-    "orange_wash": "#FBEBDD",
-    "green": "#2FA968",
-    "white": "#FFFFFF"
+    "paper": "#CFCAC1",
+    "paper_2": "#C9C5BC",
+    "ink": "#1D1D20",
+    "navy": "#2F3E59",
+    "orange": "#BB6656",
+    "orange_deep": "#914B42",
+    "orange_wash": "#E5C0B8",
+    "green": "#758A65",
+    "white": "#F4F0E7"
   },
   "headlines": {
     "main": "MAKE BRAND ASSETS FOR ME",
@@ -32,6 +32,22 @@
     "proof": "IT MADE THESE TOO.",
     "offer": "FREE. OPEN SOURCE. SIX TINY SKILLS.",
     "audit": "REAL BOTTLENECK IN YOUR INBOX?"
+  },
+  "primary_copy": {
+    "profile-avatar": "MAKE ASSETS",
+    "cover-wide": "MAKE BRAND ASSETS FOR ME",
+    "linkedin-profile-cover": "YOUR BRAND SHOULD NOT START OVER",
+    "linkedin-page-cover": "SHOW. MAKE. CHECK. SAVE.",
+    "social-square": "MAKE BRAND ASSETS FOR ME",
+    "social-portrait": "SHOW. PLAN. MAKE. CHECK. SAVE.",
+    "social-landscape": "ONE IDEA. EVERY FORMAT.",
+    "story-vertical": "MAKE A WHOLE LAUNCH PACK",
+    "open-graph": "MAKE BRAND ASSETS FOR ME",
+    "email-header": "YOUR BRAND. READY TO MOVE.",
+    "product-hunt-thumbnail": "MAKE ASSETS",
+    "product-hunt-gallery-01": "FIVE STEPS. ONE BRAND SYSTEM.",
+    "product-hunt-gallery-02": "ONE METHOD. EVERY FORMAT.",
+    "youtube-thumbnail": "YOUR BRAND SHOULD NOT START OVER"
   },
   "carousel_linkedin": [
     {"kicker": "A SMALL FREE TOOL", "headline": "MAKE BRAND ASSETS FOR ME", "body": "Show it your brand. Tell it what you need."},

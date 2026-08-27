@@ -39,12 +39,24 @@ Use one source idea, one canonical HTTPS URL, and one CTA across the pack. Short
 ## Make the files
 
 - Use the approved brand recipe and three approved visual anchors.
-- Build from a shared layout system. Adapt composition to each shape instead of stretching or cropping one master.
-- Keep important content inside the placement safe area.
+- Build from a shared image system. Adapt the visual story to each shape instead of stretching one master.
 - Make profile marks recognizable when shown as a small circle.
 - Make carousels readable one page at a time and in order.
 - Write channel-ready copy, alt text, and UTM-tagged links when the selected mode calls for them.
 - Label fictional examples clearly.
+
+### Make the background first
+
+For every raster asset family, use this recipe in order:
+
+1. Select, recompose, edit, or generate an image background from the approved visual anchors.
+2. Put one meaningful focal cluster in 35–45% of the canvas. Reserve the opposite 55–65% as protected negative space.
+3. Save and inspect the clean background master before adding copy. A generated background contains no text, letters, numbers, logos, labels, watermarks, or mock UI.
+4. Add one local text overlay inside the protected negative space. The complete visible overlay uses fewer than 15 words. Zero words is valid for a profile mark.
+5. Make a separate background master when a new aspect ratio would crop the focal cluster or shrink the protected field.
+6. Record `background_source` and `overlay_word_count` in the asset receipt.
+
+The finished asset is an image with room for one short thought. The background carries the story; the words name it.
 
 This skill creates files and publication intent. It does not connect accounts, schedule posts, or claim that anything was published.
 
@@ -60,6 +72,7 @@ launch-pack/
   assets/
   carousels/
   proofs/contact-sheet.png
+  backgrounds/
   receipts/
   campaign-manifest.json
 ```
