@@ -8,7 +8,13 @@ Make Brand Assets For Me
 
 Show Claude approved brand examples, turn them into a simple visual recipe, and make matching assets, scenes, sets, subtle motion, or complete launch packs. Every workflow uses SHOW → PLAN → MAKE → CHECK → SAVE and asks only the questions that change the result.
 
-## Install
+## Install in Claude Desktop
+
+On a paid Claude plan, open **Customize → Plugins → + → Add marketplace → Add from a repository**. Add `https://github.com/Lemonbrand/make-brand-assets-for-me`, then install **Make Brand Assets For Me**.
+
+The skills work in Claude on the web, the Chat tab in Claude Desktop, and Cowork.
+
+## Claude Code (terminal)
 
 ```text
 /plugin marketplace add Lemonbrand/make-brand-assets-for-me
@@ -18,7 +24,7 @@ Show Claude approved brand examples, turn them into a simple visual recipe, and 
 ## Try it
 
 ```text
-Set up my brand from these approved examples.
+Help me make my first brand asset.
 ```
 
 ## Maintainer

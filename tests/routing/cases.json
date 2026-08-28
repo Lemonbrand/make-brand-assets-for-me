@@ -1,5 +1,15 @@
 [
   {
+    "skill": "brand-assets-start-here",
+    "cases": [
+      {"prompt": "I installed Make Brand Assets For Me. What do I do now?", "should_ask": true, "expected": "ask for approved examples"},
+      {"prompt": "How do I use this plugin?", "should_ask": true, "expected": "start guided first run"},
+      {"prompt": "Help me make my first brand asset.", "should_ask": true, "expected": "ask for approved examples"},
+      {"prompt": "I have three approved examples ready.", "should_ask": false, "expected": "route to set up my brand"},
+      {"prompt": "Show me every advanced workflow before we start.", "should_ask": false, "expected": "offer the short workflow map"}
+    ]
+  },
+  {
     "skill": "brand-assets-set-up",
     "cases": [
       {"prompt": "Set up my brand from these images.", "should_ask": false, "expected": "brand recipe"},

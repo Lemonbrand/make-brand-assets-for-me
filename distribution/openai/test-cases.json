@@ -1,10 +1,15 @@
 {
   "starter_prompts": [
+    "Help me make my first brand asset.",
     "Set up my brand from these approved examples.",
-    "Make one transparent brand asset that means human approval.",
     "Make the complete launch pack for this offer and website."
   ],
   "positive": [
+    {
+      "prompt": "I just installed Make Brand Assets For Me. Help me make my first asset.",
+      "expected_skill": "brand-assets-start-here",
+      "expected_behavior": "Explain the three-step first run, ask for approved examples through the host ask-user surface, and route supplied references to Set Up My Brand."
+    },
     {
       "prompt": "Study these approved brand examples and write a reusable visual recipe before we make anything new.",
       "expected_skill": "brand-assets-set-up",

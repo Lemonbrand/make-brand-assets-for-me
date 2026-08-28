@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 EXPECTED_SKILLS = {
+    "brand-assets-start-here",
     "brand-assets-set-up",
     "brand-assets-make-one",
     "brand-assets-make-scene",
@@ -25,6 +26,17 @@ def test_every_skill_has_five_routing_cases():
     assert {item["skill"] for item in cases} == EXPECTED_SKILLS
     assert all(len(item["cases"]) == 5 for item in cases)
     assert all("should_ask" in case for item in cases for case in item["cases"])
+
+
+def test_start_here_is_a_public_skill_with_action_first_ui_copy():
+    plugin_skill = ROOT / "plugins/make-brand-assets-for-me/skills/brand-assets-start-here"
+    public_skill = ROOT / "skills/brand-assets-start-here"
+    assert (plugin_skill / "SKILL.md").exists()
+    assert (plugin_skill / "agents/openai.yaml").exists()
+    assert (public_skill / "SKILL.md").read_bytes() == (plugin_skill / "SKILL.md").read_bytes()
+    metadata = (plugin_skill / "agents/openai.yaml").read_text()
+    assert 'display_name: "Start Making Brand Assets"' in metadata
+    assert 'default_prompt: "Use $brand-assets-start-here to help me make my first brand asset."' in metadata
 
 
 def test_three_fictional_brand_recipes_exist():

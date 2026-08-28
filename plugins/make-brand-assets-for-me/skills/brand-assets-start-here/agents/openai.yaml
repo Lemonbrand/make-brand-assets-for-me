@@ -1,0 +1,4 @@
+interface:
+  display_name: "Start Making Brand Assets"
+  short_description: "Make your first matching brand asset"
+  default_prompt: "Use $brand-assets-start-here to help me make my first brand asset."

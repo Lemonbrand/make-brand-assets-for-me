@@ -4,15 +4,21 @@
 
 Pick the host you use.
 
-### Codex and ChatGPT desktop
+### ChatGPT — Best experience
+
+Use ChatGPT when you want one visual conversation for references, image generation, review, and saved files.
 
 ```bash
 codex plugin marketplace add Lemonbrand/make-brand-assets-for-me
 ```
 
-Restart the desktop app. Open the Plugins Directory, choose Lemonbrand, and install Make Brand Assets For Me.
+Restart the desktop app. Open the Plugins Directory, choose Lemonbrand, and install Make Brand Assets For Me. Start a new task after installation.
 
-### Claude Code
+### Claude Desktop
+
+On a paid Claude plan, open **Customize → Plugins → + → Add marketplace → Add from a repository**. Paste `https://github.com/Lemonbrand/make-brand-assets-for-me`, add it, and install **Make Brand Assets For Me**.
+
+### Claude Code (terminal)
 
 ```text
 /plugin marketplace add Lemonbrand/make-brand-assets-for-me
@@ -25,7 +31,15 @@ Restart the desktop app. Open the Plugins Directory, choose Lemonbrand, and inst
 npx skills add Lemonbrand/make-brand-assets-for-me
 ```
 
-## 2. Set up a brand
+## 2. Start
+
+Say:
+
+> Help me make my first brand asset.
+
+The plugin will ask for approved examples and guide the first run.
+
+## 3. Set up a brand
 
 Put approved examples in your own project. Then say:
 
@@ -33,7 +47,7 @@ Put approved examples in your own project. Then say:
 
 Review the short brand summary before making images.
 
-## 3. Make the first asset
+## 4. Make the first asset
 
 Say:
 
@@ -41,6 +55,6 @@ Say:
 
 You should receive a PNG and an asset receipt.
 
-## 4. Check it
+## 5. Check it
 
 Open the PNG at thumbnail size and full size. Compare it with the three approved examples named in the receipt.

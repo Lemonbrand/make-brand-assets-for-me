@@ -37,7 +37,9 @@ SHOW → PLAN → MAKE → CHECK → SAVE
 
 ## Install it
 
-### Codex and ChatGPT desktop
+### ChatGPT — Best experience
+
+ChatGPT can study your references, generate the images, and show you the results in one visual conversation.
 
 Add the Lemonbrand marketplace:
 
@@ -45,9 +47,13 @@ Add the Lemonbrand marketplace:
 codex plugin marketplace add Lemonbrand/make-brand-assets-for-me
 ```
 
-Restart the ChatGPT desktop app. Open the Plugins Directory, choose **Lemonbrand**, and install **Make Brand Assets For Me**.
+Restart the ChatGPT desktop app. Open the Plugins Directory, choose **Lemonbrand**, and install **Make Brand Assets For Me**. Then start a new task so the plugin is available.
 
-### Claude Code
+### Claude Desktop
+
+On a paid Claude plan, open **Customize → Plugins → + → Add marketplace → Add from a repository**. Paste this repository URL, add the marketplace, and install **Make Brand Assets For Me**.
+
+### Claude Code (terminal)
 
 Run these commands inside Claude Code:
 
@@ -67,6 +73,10 @@ You can also download the newest ZIP from [GitHub Releases](https://github.com/L
 ## Try it
 
 Read [Start Here](docs/start-here.md) for the complete first run.
+
+The easiest first prompt is:
+
+> Help me make my first brand asset.
 
 Put a few approved brand examples in your project. Then say:
 
@@ -97,11 +107,11 @@ The skills use the host's built-in ask-user function when a choice changes the r
 ```bash
 python3 -m pip install -r requirements-dev.txt
 pytest -q tests
-python3 scripts/sync_shared_rules.py --check
-python3 scripts/sync_asset_tools.py --check
-python3 scripts/sync_distribution_skills.py --check
-python3 scripts/check_package.py
-python3 scripts/check_for_private_stuff.py
+python3 scripts/sync_shared_rules.py --root . --check
+python3 scripts/sync_asset_tools.py --root . --check
+python3 scripts/sync_distribution_skills.py --root . --check
+python3 scripts/check_package.py .
+python3 scripts/check_for_private_stuff.py .
 ```
 
 The package includes ten baseline PNGs, their briefs and receipts, a complete 30-file launch manifest, channel copy, proof sheets, screenshots, and reproducible release tooling.
@@ -123,4 +133,4 @@ Use it, fork it, and adapt it under the [MIT License](LICENSE.md). Contributions
 
 Lemonbrand is an AI operations partner. If your team's real bottleneck lives around the inbox, book a [free 60-minute Inbox Audit](https://lemonbrand.io/inbox-audit?utm_source=github&utm_medium=referral&utm_campaign=make_brand_assets_for_me). You will leave with one clear place to begin.
 
-Version: `0.2.3`
+Version: `0.2.4`

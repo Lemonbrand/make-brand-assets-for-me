@@ -1,13 +1,13 @@
 {
   "name": "make-brand-assets-for-me",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Turn your own brand examples into clear rules, matching assets, scenes, sets, motion, and complete launch packs.",
   "author": {
     "name": "Lemonbrand",
     "email": "hello@lemonbrand.io",
     "url": "https://lemonbrand.io"
   },
-  "homepage": "https://lemonbrand.io",
+  "homepage": "https://lemonbrand.io/resources/make-brand-assets-for-me",
   "repository": "https://github.com/Lemonbrand/make-brand-assets-for-me",
   "license": "MIT",
   "keywords": ["brand", "images", "assets", "design", "workflow", "agent-skills"],
@@ -19,7 +19,7 @@
     "developerName": "Lemonbrand",
     "category": "Productivity",
     "capabilities": ["Images", "Files", "Workflows"],
-    "websiteURL": "https://lemonbrand.io",
+    "websiteURL": "https://lemonbrand.io/resources/make-brand-assets-for-me",
     "privacyPolicyURL": "https://lemonbrand.io/privacy",
     "termsOfServiceURL": "https://lemonbrand.io/terms",
     "brandColor": "#3157F6",
@@ -27,9 +27,14 @@
     "logo": "./assets/logo-light.png",
     "logoDark": "./assets/logo-dark.png",
     "defaultPrompt": [
-      "Set up my brand from these examples.",
-      "Make one brand asset for human approval.",
+      "Help me make my first brand asset.",
+      "Set up my brand from these approved examples.",
       "Make the complete launch pack for this offer."
+    ],
+    "screenshots": [
+      "./assets/screenshot-setup.png",
+      "./assets/screenshot-styles.png",
+      "./assets/screenshot-set.png"
     ]
   }
 }

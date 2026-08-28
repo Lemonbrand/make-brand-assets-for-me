@@ -12,8 +12,8 @@ Use the [OpenAI plugin submission portal](https://platform.openai.com/apps-manag
 
 - Choose a skills-only plugin.
 - Use `plugins/make-brand-assets-for-me/` as the plugin folder.
-- Confirm version `0.2.3` and license `MIT`.
-- Validate all six skills before upload.
+- Confirm version `0.2.4` and license `MIT`.
+- Validate all seven skills before upload.
 - Do not upload screenshots. This is a skills-only plugin with no plugin UI. Keep the proof images in the GitHub README instead.
 
 ## Listing

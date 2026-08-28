@@ -1,11 +1,11 @@
 # Did It Work?
 
-Yes. Version `0.2.3` passed the package checks on August 27, 2026.
+Yes. Version `0.2.4` passed the package checks on August 28, 2026.
 
 ## The short answer
 
-- 71 automated tests passed.
-- All 6 skills passed the repository structure and synchronization gates.
+- 74 automated tests passed.
+- All 7 skills passed the repository structure and synchronization gates.
 - The plugin passed the Codex plugin validator.
 - The clean-room scan found no private links, private source names, local home paths, likely secrets, or unfinished notes.
 - The ZIP contains the README, plugin, skills, examples, checks, and docs.

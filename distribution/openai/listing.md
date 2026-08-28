@@ -14,9 +14,9 @@ Turn approved brand examples into simple rules, matching assets, scenes, sets, s
 
 ## Full description
 
-Make Brand Assets For Me is a five-skill workflow for people who need new visual assets without losing the look of their brand.
+Make Brand Assets For Me is a guided visual workflow for people who need new assets without losing the look of their brand.
 
-Start by showing the plugin approved examples. It turns those examples into a simple brand recipe. Then choose one job: make one object, make a scene, make a coordinated set, or add small motion to approved artwork.
+Start with **Start Making Brand Assets**. It asks for approved examples, turns them into a simple brand recipe, and guides the first asset. Advanced workflows can make one object, a scene, a coordinated set, subtle motion, or a complete launch pack.
 
 Every job follows the same plain process: SHOW → PLAN → MAKE → CHECK → SAVE. The plugin checks approved sources before making anything new, uses structured questions only when a decision changes the result, and saves an asset receipt beside the finished file.
 
@@ -40,9 +40,9 @@ Productivity
 
 ## Starter prompts
 
-1. Set up my brand from these approved examples.
-2. Make one transparent brand asset that means human approval.
-3. Turn this four-step method into a matching asset set.
+1. Help me make my first brand asset.
+2. Set up my brand from these approved examples.
+3. Make the complete launch pack for this offer.
 
 ## Maintainer call to action
 

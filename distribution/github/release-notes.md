@@ -1,12 +1,12 @@
-# Make Brand Assets For Me v0.2.3
+# Make Brand Assets For Me v0.2.4
 
 Show an AI your brand. Tell it what you need. Make assets that match.
 
 This release includes:
 
-- six guided brand-asset skills, including **Make My Launch Pack**;
-- Codex and ChatGPT desktop marketplace packaging;
-- Claude Code marketplace packaging;
+- seven guided brand-asset skills, including **Start Making Brand Assets** and **Make My Launch Pack**;
+- ChatGPT-first marketplace packaging with action-first starter prompts and real screenshots;
+- Claude Desktop and Claude Code marketplace packaging with separate installation paths;
 - top-level Agent Skills folders for skills.sh and compatible hosts;
 - ten fictional baseline PNGs in three visual styles;
 - briefs, prompts, asset receipts, proof sheets, and screenshots;
@@ -21,11 +21,11 @@ This release includes:
 
 ## Install
 
-See the repository README for Codex, Claude Code, and skills.sh commands.
+See the repository README for ChatGPT, Claude Desktop, Claude Code, and skills.sh instructions.
 
 ## Download
 
-Download `make-brand-assets-for-me-0.2.3.zip` below. The SHA-256 digest is stored in `release/manifest.json`.
+Download `make-brand-assets-for-me-0.2.4.zip` below. The SHA-256 digest is stored in `release/manifest.json`.
 
 ## Built by Lemonbrand
 

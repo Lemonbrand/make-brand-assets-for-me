@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.4 - 2026-08-28
+
+- Added **Start Making Brand Assets**, a guided entrypoint for first-run and “how do I use this?” requests.
+- Made ChatGPT the recommended visual workflow and promoted an action-first starter prompt.
+- Added real plugin screenshots and linked metadata directly to the resource page.
+- Documented Claude Desktop’s marketplace UI separately from Claude Code’s terminal commands.
+- Expanded routing, distribution, package, release, and website tests around the onboarding experience.
+
 ## 0.2.3 - 2026-08-27
 
 - Shipped a self-contained exact-copy compositor inside every copy-bearing skill for Codex, Claude Code, and standalone Agent Skills installs.

@@ -9,6 +9,7 @@ PLUGIN = ROOT / "plugins" / "make-brand-assets-for-me"
 CANONICAL_SKILLS = PLUGIN / "skills"
 PUBLIC_SKILLS = ROOT / "skills"
 EXPECTED_SKILLS = {
+    "brand-assets-start-here",
     "brand-assets-set-up",
     "brand-assets-make-one",
     "brand-assets-make-scene",
@@ -49,6 +50,22 @@ def test_public_owner_and_license():
     assert (ROOT / "LICENSE.md").read_text().startswith("# MIT License")
 
 
+def test_codex_metadata_leads_with_the_first_run_and_shows_real_proof():
+    codex = json.loads((PLUGIN / ".codex-plugin/plugin.json").read_text())
+    interface = codex["interface"]
+    assert codex["homepage"] == "https://lemonbrand.io/resources/make-brand-assets-for-me"
+    assert interface["websiteURL"] == "https://lemonbrand.io/resources/make-brand-assets-for-me"
+    assert interface["defaultPrompt"][0] == "Help me make my first brand asset."
+    assert len(interface["defaultPrompt"]) == 3
+    assert interface["screenshots"] == [
+        "./assets/screenshot-setup.png",
+        "./assets/screenshot-styles.png",
+        "./assets/screenshot-set.png",
+    ]
+    for relative in interface["screenshots"]:
+        assert (PLUGIN / relative).exists()
+
+
 def test_codex_and_claude_marketplaces_point_to_one_plugin():
     codex = json.loads((ROOT / ".agents/plugins/marketplace.json").read_text())
     claude = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
@@ -83,16 +100,34 @@ def test_readme_has_every_install_path_and_offer():
     assert "Lemonbrand/make-brand-assets-for-me" in text
     assert "npx skills add Lemonbrand/make-brand-assets-for-me" in text
     assert "/plugin marketplace add Lemonbrand/make-brand-assets-for-me" in text
+    assert text.index("### ChatGPT") < text.index("### Claude Desktop")
+    assert "Best experience" in text
+    assert "Customize → Plugins" in text
+    assert "Claude Code (terminal)" in text
+    assert "start a new task" in text.lower()
     assert GITHUB_OFFER in text
 
 
 def test_openai_submission_cases_are_complete():
     data = json.loads((ROOT / "distribution/openai/test-cases.json").read_text())
-    assert len(data["positive"]) == 6
+    assert len(data["positive"]) == 7
     assert len(data["negative"]) == 3
     assert len(data["starter_prompts"]) == 3
     assert {item["expected_skill"] for item in data["positive"]} == EXPECTED_SKILLS
     assert all(item["expected_result"] == "do_not_trigger" for item in data["negative"])
+
+
+def test_start_here_docs_are_action_first_and_platform_specific():
+    start = (ROOT / "docs/start-here.md").read_text()
+    claude = (ROOT / "distribution/claude/listing.md").read_text()
+    openai = (ROOT / "distribution/openai/listing.md").read_text()
+    assert "Help me make my first brand asset." in start
+    assert "ChatGPT" in start and "Best experience" in start
+    assert "Claude Desktop" in start and "Customize → Plugins" in start
+    assert "Claude Code (terminal)" in start
+    assert "Start Making Brand Assets" in openai
+    assert "Claude Desktop" in claude and "Add from a repository" in claude
+    assert "Claude Code (terminal)" in claude
 
 
 def test_distribution_kit_is_ready_to_copy():
