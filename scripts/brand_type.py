@@ -1,5 +1,7 @@
 """Deterministic typography shared by the package's generated examples."""
 
+import hashlib
+
 from pathlib import Path
 
 from PIL import ImageFont
@@ -9,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FONT_PATH = ROOT / "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf"
 FONT_RELATIVE_PATH = "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf"
 FONT_LICENSE = "SIL Open Font License 1.1"
+FONT_SHA256 = hashlib.sha256(FONT_PATH.read_bytes()).hexdigest()
 
 
 def load_brand_font(size, weight=700, width=82, path=None):
@@ -31,6 +34,7 @@ def font_receipt(weight=700, width=82):
         "family": "Instrument Sans",
         "file": FONT_RELATIVE_PATH,
         "license": FONT_LICENSE,
+        "sha256": FONT_SHA256,
         "weight": int(weight),
         "width": int(width),
         "variation_applied": True,

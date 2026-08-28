@@ -7,6 +7,7 @@
     "family": "Instrument Sans",
     "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
     "license": "SIL Open Font License 1.1",
+    "sha256": "b24f1812584816958afcf22e22d08e44318c5e51651e25d2438efdde389b33b1",
     "weight": 700,
     "width": 82,
     "variation_applied": true
@@ -23,5 +24,5 @@
     "brand_system": "pass",
     "publication": "not_attempted"
   },
-  "sha256": "d146ed31b94a68674fdddc6e139e27a88611cdae22381111180e1357a9b7c298"
+  "sha256": "9cb5c936d40ac074e337ad26be6957c89229f8785a98fea9ddc78278c0c0d42e"
 }

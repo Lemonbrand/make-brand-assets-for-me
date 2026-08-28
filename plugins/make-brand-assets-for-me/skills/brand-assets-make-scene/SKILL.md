@@ -17,10 +17,10 @@ Read `references/five-steps.md`, `references/ask-the-user.md`, and `references/c
 4. State the reading order and protected copy area.
 5. Label every visible part `reuse`, `adapt`, `new`, or `look_only`.
 6. Choose the smallest useful route: select, recompose, edit, or generate.
-7. Keep supplied words outside the PNG unless the user clearly asks for baked text.
+7. Keep supplied words outside the PNG unless the user clearly asks for baked text. When they do, save and approve the text-free background first. Run `scripts/check_background_fit.py` from this loaded skill folder before crop-to-fill, then run `scripts/compose_text_overlay.py`. Give the compositor the approved font family and SHA-256, platform safe-area margins, exact copy, and protected text box. Never ask an image model to draw the words and never use a silent fallback font.
 8. Compare the result with three approved anchors at thumbnail and full size.
 9. Check meaning, clutter, contrast, crop, every visible part, and accidental text.
-10. Check the actual pixels in the protected copy area and save a proof overlay.
+10. Check the actual pixels in the protected copy area and save a proof overlay. Inspect the clean background and final image separately at thumbnail size and 100%. The final receipt must record the observed font identity, applied axes, text bounds, safe area, and pixel-measured contrast.
 11. Save the scene PNG, copy-space proof PNG, and asset receipt.
 
 ## Finish with

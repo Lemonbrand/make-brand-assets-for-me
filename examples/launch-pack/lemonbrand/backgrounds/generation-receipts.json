@@ -22,6 +22,13 @@
       "story": "Mismatched visual cards pass through a handmade checking station and emerge as one coordinated family."
     },
     {
+      "path": "landscape-4k-16x9.png",
+      "job": "Full-size 4K video cover",
+      "focal_cluster": "left 35-45 percent",
+      "protected_negative_space": "right 55-65 percent",
+      "story": "Source-derived extension of the approved 16:9 master with no source enlargement."
+    },
+    {
       "path": "portrait-4x5.png",
       "job": "Portrait posts and document carousels",
       "focal_cluster": "bottom 38-42 percent",
@@ -44,16 +51,37 @@
     },
     {
       "path": "banner-3x1.png",
-      "job": "Wide profile and page covers",
+      "job": "3:1 wide cover",
       "focal_cluster": "right 28-32 percent",
       "protected_negative_space": "left 64-68 percent",
-      "story": "A compact inspection route turns varied source cards into approved visual assets."
+      "story": "Source-derived extension of the preserved 2:1 approved master with no source enlargement."
+    },
+    {
+      "path": "banner-4x1.png",
+      "job": "4:1 LinkedIn profile cover",
+      "focal_cluster": "right 24-30 percent",
+      "protected_negative_space": "left 62-70 percent",
+      "story": "Source-derived extension of the preserved 2:1 approved master with no source enlargement."
+    },
+    {
+      "path": "banner-6x1.png",
+      "job": "6:1 LinkedIn page cover",
+      "focal_cluster": "right 24-30 percent",
+      "protected_negative_space": "left 68-74 percent",
+      "story": "Source-derived extension of the preserved 2:1 approved master with no source enlargement."
+    },
+    {
+      "path": "vertical-hd-9x16.png",
+      "job": "Full-size story and reel cover",
+      "focal_cluster": "bottom 34-38 percent",
+      "protected_negative_space": "top 62-66 percent",
+      "story": "Source-derived extension of the approved vertical master with no source enlargement."
     }
   ],
   "layout_contract": {
     "overlay_words": "0-14",
     "overlay_location": "inside the protected negative space",
-    "receipts": ["background_source", "overlay_word_count"],
-    "recompose_rule": "Use a separate master when cropping would damage the focal story or protected field."
+    "receipts": ["background_source", "source_dimensions", "target_dimensions", "crop_loss", "overlay_word_count", "font", "text_box", "text_bounds", "safe_area", "contrast", "full_size"],
+    "recompose_rule": "Never enlarge a smaller master. Keep at least 75 percent through crop-to-fill or use a separate aspect-ratio master."
   }
 }

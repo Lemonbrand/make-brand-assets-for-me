@@ -4,7 +4,7 @@ This folder is the public proof for **Make My Launch Pack**. One campaign file r
 
 Every raster starts as a clean editorial image background. Each background uses one compact focal story and a protected field of negative space. The words are added afterwards as a local layout layer, and every finished overlay uses fewer than 15 words.
 
-The five clean masters are in `backgrounds/`. Their generated pixels contain no text, logos, labels, or mock interface. Each raster receipt names the background it used and records its overlay word count.
+The nine placement-safe masters are in `backgrounds/`; the original 2:1 wide source is preserved in `backgrounds/source/`. Their pixels contain no text, logos, labels, or mock interface. Each raster receipt names the background it used and records source and target dimensions, crop loss, copy length, font identity, safe area, observed glyph bounds, and pixel-measured contrast.
 
 Rebuild everything from the repository root:
 

@@ -12,6 +12,8 @@ This is a small set of skills for an AI agent. You bring your own approved brand
 
 The package does not give everyone the same look. The example PNGs are only proof that one process can work across very different styles.
 
+It also refuses the quiet shortcuts that make automated assets look cheap: no image-model lettering, no mystery font fallback, no copy under platform UI, no enlarged background, and no destructive crop hidden by a contact sheet.
+
 ## The whole method
 
 ```text
@@ -96,6 +98,7 @@ The skills use the host's built-in ask-user function when a choice changes the r
 python3 -m pip install -r requirements-dev.txt
 pytest -q tests
 python3 scripts/sync_shared_rules.py --check
+python3 scripts/sync_asset_tools.py --check
 python3 scripts/sync_distribution_skills.py --check
 python3 scripts/check_package.py
 python3 scripts/check_for_private_stuff.py
@@ -120,4 +123,4 @@ Use it, fork it, and adapt it under the [MIT License](LICENSE.md). Contributions
 
 Lemonbrand is an AI operations partner. If your team's real bottleneck lives around the inbox, book a [free 60-minute Inbox Audit](https://lemonbrand.io/inbox-audit?utm_source=github&utm_medium=referral&utm_campaign=make_brand_assets_for_me). You will leave with one clear place to begin.
 
-Version: `0.2.2`
+Version: `0.2.3`

@@ -35,6 +35,18 @@ They already knew the hard parts. They checked the library before drawing, gave 
 - Private names, links, local paths, and customer artwork are not part of the package.
 - Ten fictional baselines now test three visual styles, three scenes, and one four-piece family.
 
+## What real production taught us
+
+The first public launch pack exposed problems that looked fine in a small contact sheet:
+
+- One background was forced into very different banner shapes. Important art was cropped and smaller masters were enlarged.
+- LinkedIn cover copy ignored the platform safe area and could sit under the profile photo.
+- A font name was not enough proof. The exact file, SHA-256, family, and applied variable axes must match.
+- Declared colors do not prove readable type. Contrast must be measured from the real pixels under the rendered letters.
+- Instructions alone are easy to skip. The compositor and checks must travel inside the installed skill.
+
+Version 0.2.3 turns those lessons into hard gates. A copy-bearing skill now ships its own background-fit checker and compositor. They stop when the font is wrong, the text leaves the canonical placement safe area, the real contrast is too low, the copy reaches 15 words, a background would be enlarged, or crop-to-fill would discard more than 25%. Every final is checked at thumbnail size and 100%.
+
 ## Honest baseline result
 
 The baseline proves routing, style switching, scene layout, transparent cutouts, family consistency, prompt receipts, and review-sheet generation.

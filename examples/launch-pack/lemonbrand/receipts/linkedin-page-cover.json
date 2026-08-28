@@ -7,6 +7,7 @@
     "family": "Instrument Sans",
     "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
     "license": "SIL Open Font License 1.1",
+    "sha256": "b24f1812584816958afcf22e22d08e44318c5e51651e25d2438efdde389b33b1",
     "weight": 700,
     "width": 82,
     "variation_applied": true
@@ -14,14 +15,56 @@
   "source_files": [
     "campaign.json",
     "source-facts.json",
-    "backgrounds/banner-3x1.png"
+    "backgrounds/banner-6x1.png"
   ],
-  "background_source": "backgrounds/banner-3x1.png",
+  "background_source": "backgrounds/banner-6x1.png",
   "overlay_word_count": 4,
   "checks": {
     "dimensions": "pass",
     "brand_system": "pass",
-    "publication": "not_attempted"
+    "publication": "not_attempted",
+    "safe_area": "pass",
+    "contrast": "pass",
+    "full_size": "pass"
   },
-  "sha256": "67674474da37a4d6094329ad7397892cc8cafa9bfdfaa27cb847a4746c176fee"
+  "sha256": "dce12ea26b1df2335d5e097db1c26bb418917af82d575931b6fabf7183f50674",
+  "source_dimensions": [
+    4200,
+    700
+  ],
+  "target_dimensions": [
+    4200,
+    700
+  ],
+  "crop_loss": 0.0,
+  "text_box": [
+    600,
+    119,
+    1815,
+    476
+  ],
+  "text_bounds": [
+    605,
+    162,
+    2135,
+    490
+  ],
+  "safe_area": {
+    "top": 90,
+    "right": 210,
+    "bottom": 90,
+    "left": 600
+  },
+  "safe_rectangle": [
+    600,
+    90,
+    3990,
+    610
+  ],
+  "contrast": {
+    "minimum_ratio": 10.067,
+    "p10_ratio": 11.511,
+    "median_ratio": 11.511,
+    "sampled_mask_alpha_min": 240
+  }
 }

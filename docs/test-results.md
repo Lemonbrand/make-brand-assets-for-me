@@ -1,10 +1,10 @@
 # Did It Work?
 
-Yes. Version `0.2.2` passed the package checks on August 27, 2026.
+Yes. Version `0.2.3` passed the package checks on August 27, 2026.
 
 ## The short answer
 
-- 60 automated tests passed.
+- 71 automated tests passed.
 - All 6 skills passed the repository structure and synchronization gates.
 - The plugin passed the Codex plugin validator.
 - The clean-room scan found no private links, private source names, local home paths, likely secrets, or unfinished notes.
@@ -23,14 +23,14 @@ The included baseline has:
 
 The launch-pack baseline adds:
 
-- 5 clean generated editorial background masters;
+- 9 placement-safe editorial background masters plus the preserved 2:1 source;
 - 14 primary channel PNGs;
 - a 5-page LinkedIn carousel and PDF;
 - a 10-page social carousel;
 - 30 asset receipts and one validated public campaign manifest;
 - source-linked copy for LinkedIn, Instagram, Facebook, X, YouTube, Product Hunt, and email;
-- measured protected negative space, a named background source, and a 0-14 word overlay gate for every raster;
-- bundled Instrument Sans Bold/Condensed with deterministic variable-axis settings and no generic fallback;
+- measured protected negative space, source and target dimensions, crop loss, safe area, observed glyph bounds, pixel contrast, a named background source, and a 0-14 word overlay gate for every raster;
+- a portable exact-copy compositor with verified font family, SHA-256, deterministic variable-axis settings, and no generic fallback;
 - identical asset digests across two consecutive builds.
 
 See `examples/gallery/proofs/04-all-baselines.png` for the original style sheet and `examples/launch-pack/lemonbrand/proofs/contact-sheet.png` for the complete launch family.

@@ -51,7 +51,7 @@ def test_package_checker_rejects_pip_cache_without_dependency_path(tmp_path):
 
 def test_release_zip_is_clean_and_complete():
     subprocess.run([sys.executable, str(ROOT / "scripts/build_release.py")], cwd=ROOT, check=True, capture_output=True, text=True)
-    archive = ROOT / "release/make-brand-assets-for-me-0.2.2.zip"
+    archive = ROOT / "release/make-brand-assets-for-me-0.2.3.zip"
     manifest = ROOT / "release/manifest.json"
     assert archive.exists()
     assert manifest.exists()
@@ -67,7 +67,7 @@ def test_release_zip_is_clean_and_complete():
         assert json.loads(manifest.read_text())["sha256"] == first_digest
     finally:
         os.utime(readme, ns=original_times)
-    assert data["version"] == "0.2.2"
+    assert data["version"] == "0.2.3"
     assert data["sha256"]
     with zipfile.ZipFile(archive) as package:
         names = package.namelist()
@@ -79,6 +79,10 @@ def test_release_zip_is_clean_and_complete():
         assert "make-brand-assets-for-me/.claude-plugin/marketplace.json" in names
         assert "make-brand-assets-for-me/skills/brand-assets-set-up/SKILL.md" in names
         assert "make-brand-assets-for-me/skills/brand-assets-make-launch-pack/SKILL.md" in names
+        assert "make-brand-assets-for-me/skills/brand-assets-make-launch-pack/scripts/compose_text_overlay.py" in names
+        assert "make-brand-assets-for-me/skills/brand-assets-make-launch-pack/scripts/check_background_fit.py" in names
+        assert "make-brand-assets-for-me/plugins/make-brand-assets-for-me/skills/brand-assets-make-launch-pack/scripts/compose_text_overlay.py" in names
+        assert "make-brand-assets-for-me/plugins/make-brand-assets-for-me/skills/brand-assets-make-launch-pack/scripts/check_background_fit.py" in names
         assert "make-brand-assets-for-me/examples/launch-pack/lemonbrand/campaign-manifest.json" in names
         assert "make-brand-assets-for-me/distribution/openai/test-cases.json" in names
         assert not any("__pycache__" in name or name.endswith(".pyc") for name in names)

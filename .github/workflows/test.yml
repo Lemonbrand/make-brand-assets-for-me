@@ -26,6 +26,7 @@ jobs:
       - name: Check synchronized skill copies
         run: |
           python scripts/sync_shared_rules.py --root . --check
+          python scripts/sync_asset_tools.py --root . --check
           python scripts/sync_distribution_skills.py --root . --check
       - name: Check the public package
         run: |

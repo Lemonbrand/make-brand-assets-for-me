@@ -7,6 +7,7 @@
     "family": "Instrument Sans",
     "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
     "license": "SIL Open Font License 1.1",
+    "sha256": "b24f1812584816958afcf22e22d08e44318c5e51651e25d2438efdde389b33b1",
     "weight": 700,
     "width": 82,
     "variation_applied": true
@@ -21,7 +22,49 @@
   "checks": {
     "dimensions": "pass",
     "brand_system": "pass",
-    "publication": "not_attempted"
+    "publication": "not_attempted",
+    "safe_area": "pass",
+    "contrast": "pass",
+    "full_size": "pass"
   },
-  "sha256": "d4787a4a2bb10dd7d5e16a519fdbb71973de928ae165cf9f90978f18fdec3b41"
+  "sha256": "90b78dbd5235df3e9678a88135e669a339285c4916b9642829e989ea5ad12f7b",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "target_dimensions": [
+    1080,
+    1080
+  ],
+  "crop_loss": 0.0,
+  "text_box": [
+    80,
+    97,
+    535,
+    475
+  ],
+  "text_bounds": [
+    82,
+    126,
+    542,
+    569
+  ],
+  "safe_area": {
+    "top": 80,
+    "right": 80,
+    "bottom": 100,
+    "left": 80
+  },
+  "safe_rectangle": [
+    80,
+    80,
+    1000,
+    980
+  ],
+  "contrast": {
+    "minimum_ratio": 10.38,
+    "p10_ratio": 11.73,
+    "median_ratio": 11.968,
+    "sampled_mask_alpha_min": 240
+  }
 }

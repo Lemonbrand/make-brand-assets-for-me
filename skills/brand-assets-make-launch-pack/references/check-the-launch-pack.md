@@ -18,6 +18,7 @@ Give every item a result: `pass`, `draft`, or `needs-review`.
 - Every raster receipt names the clean background master in `background_source`.
 - Every typed asset names the approved portable font file, family, license, weight, width, and applied variation settings. There is no silent default-font fallback.
 - The focal cluster stays outside the protected negative space at the final crop.
+- No background is enlarged. Crop-to-fill keeps at least 75% of the selected master; otherwise a separate master is used.
 
 ## Every file works
 
@@ -25,6 +26,8 @@ Give every item a result: `pass`, `draft`, or `needs-review`.
 - The generated background has no text. The local overlay is readable at normal feed size and stays out of interface-covered areas.
 - The type has enough weight and character to feel intentional at feed size. It is not a generic placeholder or a thin default face.
 - `overlay_word_count` is present and is an integer from 0 through 14.
+- The observed text bounds stay inside both the protected copy box and the placement `safe_area`.
+- Contrast is measured from the actual background pixels under the rendered glyph mask, not inferred from declared palette colors.
 - Profile art survives a circular crop.
 - Carousel pages work alone, in order, and as a complete document.
 - Alt text explains the useful visual information without repeating the caption.

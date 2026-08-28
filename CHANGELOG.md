@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.3 - 2026-08-27
+
+- Shipped a self-contained exact-copy compositor inside every copy-bearing skill for Codex, Claude Code, and standalone Agent Skills installs.
+- Added fail-closed font family, font SHA-256, variable-axis, safe-area, copy-length, glyph-bound, and pixel-measured contrast checks.
+- Rebuilt the worked launch pack so no background is enlarged and no crop discards more than 25% of its source master.
+- Added dedicated 3:1, 4:1, 6:1, 4K landscape, and HD vertical masters instead of forcing one source into incompatible placements.
+- Fixed LinkedIn cover copy so it respects the declared profile-photo safe areas at full resolution.
+
 ## 0.2.2 - 2026-08-27
 
 - Replaced generic generated-example typography with bundled Instrument Sans Bold/Condensed.

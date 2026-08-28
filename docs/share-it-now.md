@@ -6,7 +6,7 @@ Send the public repository:
 
 `https://github.com/Lemonbrand/make-brand-assets-for-me`
 
-Or send `release/make-brand-assets-for-me-0.2.2.zip`.
+Or send `release/make-brand-assets-for-me-0.2.3.zip`.
 
 Your friend can unzip it, read `README.md`, and inspect the complete example sheet before installing anything.
 

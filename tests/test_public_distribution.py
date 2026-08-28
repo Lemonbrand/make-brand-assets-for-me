@@ -66,6 +66,17 @@ def test_agent_skills_copy_matches_plugin():
     assert sync.sync_skills(ROOT, check_only=True) == []
 
 
+def test_copy_bearing_skills_name_the_portable_compositor():
+    for name in {
+        "brand-assets-make-scene",
+        "brand-assets-make-launch-pack",
+    }:
+        text = (CANONICAL_SKILLS / name / "SKILL.md").read_text()
+        assert "scripts/compose_text_overlay.py" in text, name
+        assert "scripts/check_background_fit.py" in text, name
+        assert "text-free background" in text.lower(), name
+
+
 def test_readme_has_every_install_path_and_offer():
     text = (ROOT / "README.md").read_text()
     assert "# Make Brand Assets For Me" in text

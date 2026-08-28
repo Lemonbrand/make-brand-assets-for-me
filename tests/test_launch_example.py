@@ -2,6 +2,7 @@ import importlib.util
 import json
 from pathlib import Path
 
+import pytest
 from PIL import Image, ImageStat
 
 
@@ -113,17 +114,74 @@ def test_generated_background_masters_have_real_negative_space():
     protected_regions = {
         "landscape-16x9.png": lambda w, h: (int(w * .55), 0, w, h),
         "banner-3x1.png": lambda w, h: (0, 0, int(w * .55), h),
+        "banner-4x1.png": lambda w, h: (0, 0, int(w * .62), h),
+        "banner-6x1.png": lambda w, h: (0, 0, int(w * .68), h),
+        "landscape-4k-16x9.png": lambda w, h: (int(w * .55), 0, w, h),
         "square-1x1.png": lambda w, h: (0, 0, int(w * .52), int(h * .52)),
         "portrait-4x5.png": lambda w, h: (0, 0, w, int(h * .52)),
         "vertical-9x16.png": lambda w, h: (0, 0, w, int(h * .52)),
+        "vertical-hd-9x16.png": lambda w, h: (0, 0, w, int(h * .52)),
     }
 
     assert {path.name for path in backgrounds.glob("*.png")} == set(protected_regions)
     for filename, region in protected_regions.items():
         with Image.open(backgrounds / filename) as image:
-            assert min(image.size) >= 800
+            assert min(image.size) >= 700
             quiet = image.convert("RGB").crop(region(*image.size))
             assert max(ImageStat.Stat(quiet).stddev) < 12, filename
+
+
+def test_copy_boxes_respect_each_placement_safe_area():
+    module = load_builder_module()
+    placements = json.loads(
+        (
+            ROOT
+            / "plugins/make-brand-assets-for-me/skills/brand-assets-make-launch-pack/references/channel-placements.json"
+        ).read_text()
+    )["placements"]
+
+    for placement in placements:
+        width, height = placement["width"], placement["height"]
+        family = module.composition_family(width, height)
+        x, y, box_width, box_height = module.copy_box(
+            width, height, family, placement["safe_area"]
+        )
+        safe = placement["safe_area"]
+        assert x >= safe["left"], placement["id"]
+        assert y >= safe["top"], placement["id"]
+        assert x + box_width <= width - safe["right"], placement["id"]
+        assert y + box_height <= height - safe["bottom"], placement["id"]
+
+
+def test_background_preparation_rejects_upscale_and_destructive_crop(tmp_path):
+    module = load_builder_module()
+    small = tmp_path / "small.png"
+    wide = tmp_path / "wide.png"
+    Image.new("RGB", (100, 100), "white").save(small)
+    Image.new("RGB", (400, 100), "white").save(wide)
+
+    with pytest.raises(ValueError, match="upscale"):
+        module.prepare_background(small, (200, 200))
+    with pytest.raises(ValueError, match="crop"):
+        module.prepare_background(wide, (100, 100), max_crop_loss=0.25)
+
+
+def test_worked_pack_records_full_size_safe_area_and_contrast_evidence():
+    load_builder()(ROOT, CAMPAIGN)
+    manifest = json.loads((CAMPAIGN / "campaign-manifest.json").read_text())
+
+    for asset in manifest["assets"]:
+        if asset["format"] != "png":
+            continue
+        receipt = json.loads((CAMPAIGN / "receipts" / f"{asset['id']}.json").read_text())
+        assert receipt["source_dimensions"][0] >= asset["width"], asset["id"]
+        assert receipt["source_dimensions"][1] >= asset["height"], asset["id"]
+        assert receipt["crop_loss"] <= 0.25, asset["id"]
+        assert receipt["text_box"]
+        assert receipt["text_bounds"]
+        assert receipt["safe_area"]
+        assert receipt["contrast"]["p10_ratio"] >= 3.0, asset["id"]
+        assert receipt["checks"]["full_size"] == "pass"
 
 
 def test_every_raster_uses_a_background_and_fewer_than_fifteen_overlay_words():
@@ -153,6 +211,7 @@ def test_every_raster_uses_the_bundled_bold_condensed_brand_font():
             "family": "Instrument Sans",
             "file": "plugins/make-brand-assets-for-me/assets/fonts/InstrumentSans-Variable.ttf",
             "license": "SIL Open Font License 1.1",
+            "sha256": "b24f1812584816958afcf22e22d08e44318c5e51651e25d2438efdde389b33b1",
             "weight": 700,
             "width": 82,
             "variation_applied": True,

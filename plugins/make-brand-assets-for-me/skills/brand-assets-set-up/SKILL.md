@@ -21,7 +21,7 @@ Read `references/five-steps.md`, `references/ask-the-user.md`, and `references/c
 
 ## Brand recipe
 
-Record materials, colors, lines and shapes, texture, shadows and depth, layout, type, motion, three approved anchors, and things to avoid.
+Record materials, colors, lines and shapes, texture, shadows and depth, layout, type, motion, three approved anchors, and things to avoid. For baked copy, record the approved font file, family, SHA-256, source or license, weight, width, case, color, and fallback rule. Missing font evidence means `stop-and-ask`, not permission to use a default.
 
 Record whether the user confirmed permission to use the references. Do not make a legal-clearance claim.
 
